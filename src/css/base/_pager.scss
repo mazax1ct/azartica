@@ -1,0 +1,46 @@
+.pager {
+    @include list-reset;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: var(--section_vertical_gap);
+
+    &__link {
+        align-items: center;
+        background-color: var(--white);
+        border-radius: 4px;
+        border: 1px solid var(--grey);
+        color: var(--black);
+        display: flex;
+        height: 32px;
+        justify-content: center;
+        min-width: 32px;
+        padding-left: 3px;
+        padding-right: 3px;
+        text-decoration: none;
+
+        &.is-active {
+            background-color: var(--accent_2);
+            border-color: var(--accent_2);
+            color: var(--white);
+        }
+
+        svg {
+            fill: var(--grey);
+            height: 24px;
+            width: 24px;
+        }
+    }
+}
+
+a.pager__link {
+    svg {
+        fill: var(--accent_2);
+    }
+    @include hover {
+        svg {
+            fill: var(--accent);
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.promocodes {
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: repeat(auto-fit, minmax(236px, 1fr));
+}
+
+.promo-card {
+    border-radius: var(--border_radius_default);
+    border: 1px solid var(--purple_light);
+    background-color: var(--white);
+    box-shadow: var(--box_shadow_default);
+    padding: 30px;
+    position: relative;
+    transition: border-color 0.3s;
+    z-index: 0;
+    @include hover {
+        border-color: var(--accent);
+    }
+
+    &__image {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        &:not(:last-child) {
+            margin-bottom: var(--gap);
+        }
+
+        img {
+            display: block;
+            height: 76px;
+            object-fit: contain;
+            width: 100%;
+        }
+    }
+
+    &__button {
+        @include active-area;
+        @include button-reset;
+        align-items: center;
+        background-color: var(--white);
+        border-radius: var(--border_radius_small);
+        border: 1px solid var(--grey_dark);
+        color: var(--black);
+        display: flex;
+        font-size: 15px;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px 18px;
+        transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+        width: 100%;
+        @include hover {
+            background-color: var(--accent);
+            border-color: var(--accent);
+            color: var(--white);
+        }
+
+        svg {
+            fill: currentColor;
+            height: 24px;
+            min-width: 24px;
+            width: 24px;
+        }
+    }
+
+    &__button-text {
+        max-width: calc(100% - 10px - 24px);
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}

@@ -1,0 +1,98 @@
+.streamers-list {
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: repeat(auto-fit, minmax(236px, 1fr));
+}
+
+.streamer-card {
+    border-radius: var(--border_radius_default);
+    border: 1px solid var(--grey_light);
+    background-color: var(--white);
+    box-shadow: var(--box_shadow_default);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+    position: relative;
+    transition: border-color 0.3s;
+    z-index: 0;
+    @include hover {
+        border-color: var(--accent);
+
+        .streamer-card__image {
+            img {
+                transform: scale(1.02);
+            }
+        }
+
+        .streamer-card__button {
+            background-color: var(--accent);
+        }
+    }
+
+    &--small {
+        text-align: center;
+
+        .streamer-card__image {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .streamer-card__platforms {
+            justify-content: center;
+        }
+    }
+
+    &__image {
+        border-radius: 50%;
+        height: 60px;
+        margin-bottom: 16px;
+        overflow: hidden;
+        width: 60px;
+
+        img {
+            display: block;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: transform 0.3s;
+            transform: scale(1);
+            width: 100%;
+        }
+    }
+
+    &__text-block {}
+
+    &__title {
+        font-size: clamp(18px, 3vw, 24px);
+        font-weight: 700;
+        line-height: 1.2;
+        margin: 0;
+
+        a {
+            @include active-area;
+            color: var(--black);
+            text-decoration: none;
+        }
+    }
+
+    &__platforms {
+        display: flex;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+
+    &__platform {
+        height: 32px;
+        min-width: 32px;
+        width: 32px;
+    }
+
+    &__viewers {
+        color: var(--grey);
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+}

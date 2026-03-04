@@ -1,0 +1,32 @@
+.providers {
+    display: grid;
+    gap: var(--gap);
+    grid-template-columns: repeat(auto-fit, minmax(236px, 1fr));
+}
+
+.provider-card {
+    border-radius: var(--border_radius_default);
+    border: 1px solid var(--purple_light);
+    background-color: var(--white);
+    box-shadow: var(--box_shadow_default);
+    padding: 30px;
+    position: relative;
+    transition: border-color 0.3s;
+    z-index: 0;
+    @include hover {
+        border-color: var(--accent);
+    }
+
+    &__image {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+
+        img {
+            display: block;
+            height: 140px;
+            object-fit: contain;
+            width: 100%;
+        }
+    }
+}

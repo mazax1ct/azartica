@@ -1,0 +1,108 @@
+.footer {
+    background-color: #E8EAF2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @media(min-width: $lg) {
+        padding-bottom: 90px;
+    }
+
+    &__top {
+        display: flex;
+        gap: var(--gap);
+        flex-wrap: wrap;
+        @media(min-width: $md) {
+            display: grid;
+            gap: var(--gap);
+            grid-template-columns: minmax(25%, 1fr) 1fr 1fr 1fr minmax(25%, 1fr);
+        }
+
+        .footer-menu {
+            @media(max-width: $sm - 0.02px) {
+                width: calc(100% / 2 - var(--gap) / 2);
+            }
+            @media(min-width: $sm) and (max-width: $md - 0.02px) {
+                width: calc(100% / 4 - var(--gap) / 4 * 3);
+            }
+        }
+    }
+
+    &__logo {
+        margin-bottom: 20px;
+
+        img {
+            display: block;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--gap);
+        margin-top: 20px;
+        padding-top: 30px;
+        position: relative;
+        z-index: 0;
+        @media(min-width: $md) {
+            display: grid;
+            grid-template-columns: 41% 2fr 25%;
+        }
+        @media(min-width: $hd) {
+            grid-template-columns: 41.25% 2fr 25%;
+        }
+
+        &::before {
+            border-top: 1px solid var(--white);
+            content: '';
+            left: 50%;
+            position: absolute;
+            top: 0;
+            transform: translateX(-50%);
+            width: 100vw;
+            z-index: 0;
+        }
+
+        .footer-menu {
+            @media(min-width: $md) {
+                order: 2;
+            }
+        }
+    }
+
+    &__bottom-left {
+        @media(min-width: $md) {
+            order: 1;
+        }
+    }
+
+    &__bottom-right {
+        @media(min-width: $md) {
+            order: 2;
+        }
+    }
+}
+
+.footer-menu {
+    @include list-reset;
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__item {
+        &:not(:last-child) {
+            margin-bottom: var(--gap);
+        }
+    }
+
+    &__link {
+        @include active-area;
+        color: var(--black);
+        display: block;
+        position: relative;
+        text-decoration: none;
+        z-index: 0;
+        @include hover {
+            color: var(--purple);
+        }
+    }
+}

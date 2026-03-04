@@ -1,0 +1,29 @@
+.news-streamers {
+    &:not(:last-child) {
+        margin-bottom: var(--section_bottom_padding_min);
+    }
+    @media(min-width: $md) {
+        display: flex;
+        gap: var(--gap);
+    }
+
+    &__news {
+        @media(max-width: $md - 0.02px) {
+            margin-bottom: 30px;
+        }
+        @media(min-width: $md) {
+            padding-top: 30px;
+            width: 40.8%;
+        }
+    }
+
+    &__streamers {
+        background-color: var(--green_light);
+        border-radius: var(--border_radius_default);
+        flex-grow: 1;
+        padding: 20px;
+        @media(min-width: $hd) {
+            padding: 30px;
+        }
+    }
+}

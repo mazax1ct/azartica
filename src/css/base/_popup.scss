@@ -1,0 +1,44 @@
+.popup {
+    background-color: var(--white);
+    border-radius: 15px;
+    border: 1px solid var(--accent_2);
+    box-shadow: 2px 4px 70px rgba(255, 201, 49, 0.2);
+    display: none;
+    max-width: 500px;
+    padding: 30px;
+    width: 100%;
+
+    &.fancybox-content {
+        padding: 30px;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__button {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        max-width: 260px;
+        width: 100%;
+    }
+
+    &__bottom {
+        font-size: 14px;
+        line-height: 1.57142;
+        margin-top: 30px;
+        text-align: center;
+
+        p {
+            &:not(:last-child) {
+                margin-bottom: 5px;
+            }
+        }
+
+        a {
+            font-weight: 600;
+        }
+    }
+}

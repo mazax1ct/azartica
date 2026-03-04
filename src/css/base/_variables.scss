@@ -1,0 +1,46 @@
+$xs: 480px;
+$sm: 768px;
+$md: 1024px;
+$hd: 1200px;
+$lg: 1400px;
+$xlg: 1680px;
+$fhd: 1900px;
+
+:root {
+    --black: #0B1020;
+    --white: #fff;
+    --base_bg: #F3F5FD;
+    --accent: #307FE2;
+    --blue: #006FEE;
+    --blue_light: #E5F1FD;
+    --blue_dark: #315EFB;
+    --grey: #6D7079;
+    --grey_light: #EBEBEB;
+    --grey_dark: #8392A6;
+    --purple: #639DFF;
+    --purple_light: #E2DEFA;
+    --purple_dark: #5245B5;
+    --green: #52B72F;
+    --green_light: #DCF1D5;
+    --green_dark: #015748;
+    --yellow: #F8BF51;
+    --accent_red: #FF383C;
+    --accent_green: #34C759;
+    --orange: #FF8D28;
+    --orange_light: #FFE8D4;
+    --border_radius_default: 20px;
+    --border_radius_small: 14px;
+    --box_shadow_default: 0 1px 2px rgba(0, 0, 0, 0.05);
+    --container_padding: 20px;
+    --gap: 20px;
+    --container_max_width: 1560px;
+    --section_top_padding_min: 40px;
+    --section_top_padding_max: 80px;
+    --section_bottom_padding_min: 50px;
+    --section_bottom_padding_max: 100px;
+    --header_min_height: 70px;
+    --primary_font: 'Inter', Arial, sans-serif;
+    @media(min-width: $lg) {
+        --header_min_height: 80px;
+    }
+}

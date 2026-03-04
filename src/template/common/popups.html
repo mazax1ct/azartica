@@ -1,0 +1,135 @@
+<div id="register" class="popup">
+    <p class="popup__title h2">Регистрация</p>
+
+    <p class="text-center">Через соцсети</p>
+
+    <div class="social-register">
+        <a class="social-register__link" href="#" title="Вконтакте">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#social_reg_vk_icon" />
+            </svg>
+        </a>
+
+        <a class="social-register__link" href="#" title="Яндекс">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#social_reg_ya_icon" />
+            </svg>
+        </a>
+
+        <a class="social-register__link" href="#" title="Google">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#social_reg_google_icon" />
+            </svg>
+        </a>
+    </div>
+
+    <p class="text-center">или</p>
+
+    <form action="">
+        <label class="input-label">
+            <span class="input-label__text">E-mail <span class="required">*</span></span>
+
+            <input class="input" type="text" name="EMAIL" placeholder="Введите ваш e-mail" required>
+        </label>
+
+        <label class="input-label">
+            <span class="input-label__text">Пароль <span class="required">*</span></span>
+
+            <input class="input" type="text" name="PASS" placeholder="Введите ваш пароль" required>
+        </label>
+
+        <label class="input-label">
+            <span class="input-label__text">Повторите пароль <span class="required">*</span></span>
+
+            <input class="input" type="text" name="REPASS" placeholder="Введите пароль повторно" required>
+        </label>
+
+        <button class="popup__button button button--primary" type="submit">Регистрация</button>
+    </form>
+
+    <div class="popup__bottom">
+        <p>Нажимая кнопку «Зарегистрироваться»<br> вы принимаете условия <a class="black-link" href="#" target="_blank">Пользовательского соглашения</a></p>
+
+        <p>Уже зарегистрированы? <a href="#">Вход</a></p>
+    </div>
+</div>
+
+<div id="auth" class="popup">
+    <p class="popup__title h2">Вход</p>
+
+    <p class="text-center">Через соцсети</p>
+
+    <div class="social-register">
+        <a class="social-register__link" href="#" title="Вконтакте">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#social_reg_vk_icon" />
+            </svg>
+        </a>
+
+        <a class="social-register__link" href="#" title="Яндекс">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#social_reg_ya_icon" />
+            </svg>
+        </a>
+
+        <a class="social-register__link" href="#" title="Google">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#social_reg_google_icon" />
+            </svg>
+        </a>
+    </div>
+
+    <p class="text-center">или</p>
+
+    <form action="">
+        <label class="input-label">
+            <span class="input-label__text">E-mail <span class="required">*</span></span>
+
+            <input class="input" type="text" name="EMAIL" placeholder="Введите ваш e-mail" required>
+        </label>
+
+        <label class="input-label">
+            <span class="input-label__text">Пароль <span class="required">*</span></span>
+
+            <input class="input" type="text" name="PASS" placeholder="Введите ваш пароль" required>
+        </label>
+
+        <button class="popup__button button button--primary" type="submit">Войти</button>
+    </form>
+
+    <div class="popup__bottom">
+        <p><a class="black-link" href="#" target="_blank">Восстановить пароль</a></p>
+
+        <p>Еще не зарегистрированы? <a href="#">Регистрация</a></p>
+    </div>
+</div>
+
+<div id="pass_recovery" class="popup">
+    <p class="popup__title h2">Восстановление пароля</p>
+
+    <p class="text-center">Введите ваш e-mail</p>
+
+    <form action="">
+        <label class="input-label">
+            <span class="input-label__text">E-mail <span class="required">*</span></span>
+
+            <input class="input" type="text" name="EMAIL" placeholder="Введите ваш e-mail" required>
+        </label>
+
+        <button class="popup__button button button--primary" type="submit">Восстановить</button>
+    </form>
+
+    <div class="popup__bottom">
+        <p>На указанный вами адрес электронной почты будет отправлена инструкция по восстановления пароля</p>
+
+        <p><a href="#">Назад</a></p>
+    </div>
+</div>
+
+<div id="confirm" class="popup">
+    <p class="popup__title h2">Инструкция отправлена</p>
+
+    <p class="text-center"> Зайдите в почту с указанным адресом и перейдите по ссылке «Восстановить пароль»</p>
+
+    <a class="popup__button button button--primary" href="#">На главную</a>
+</div>

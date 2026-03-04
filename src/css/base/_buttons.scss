@@ -1,0 +1,78 @@
+.button {
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: var(--border_radius_small);
+    cursor: pointer;
+    display: inline-flex;
+    font-family: var(--primary_font);
+    font-size: 16px;
+    font-weight: 300;
+    gap: 10px;
+    height: 40px;
+    justify-content: center;
+    line-height: 1.3;
+    padding: 9px 16px;
+    text-decoration: none;
+    text-align: center;
+    transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+
+    &.disabled,
+    &:disabled,
+    &[data-disabled] {
+        cursor: default;
+        pointer-events: none;
+    }
+
+    &--primary {
+        background-color: var(--accent);
+        color: var(--white);
+
+        &:not(.disabled),
+        &:not(:disabled),
+        &:not([data-disabled]) {
+            @include hover {
+                background-color: var(--purple_dark);
+                color: var(--white);
+            }
+        }
+
+        &.disabled,
+        &:disabled,
+        &[data-disabled] {
+            background-color: var(--grey);
+            border-color: var(--grey);
+            color: #737373;
+        }
+    }
+
+    &--secondary {
+        background-color: var(--white);
+        border-color: var(--accent);
+        color: var(--black);
+
+        &:not(.disabled),
+        &:not(:disabled),
+        &:not([data-disabled]) {
+            @include hover {
+                border-color: var(--accent);
+                background-color: var(--blue_dark);
+                color: var(--white);
+            }
+        }
+
+        &.disabled,
+        &:disabled,
+        &[data-disabled] {
+            background-color: var(--grey);
+            border-color: var(--grey);
+            color: #737373;
+        }
+    }
+
+    svg {
+        fill: currentColor;
+        height: 24px;
+        min-width: 24px;
+        width: 24px;
+    }
+}

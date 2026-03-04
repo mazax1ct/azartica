@@ -1,0 +1,27 @@
+.info-block {
+    border-left: 3px solid;
+    padding: 20px;
+
+    &:not(:last-child) {
+        margin-bottom: 24px;
+    }
+
+    &:not(:first-child) {
+        margin-top: 24px;
+    }
+
+    &--type_1 {
+        border-left-color: var(--orange);
+        background-color: var(--orange_light);
+    }
+
+    &--type_2 {
+        border-left-color: var(--accent);
+        background-color: var(--blue_light);
+    }
+
+    &--type_3 {
+        border-left-color: var(--green);
+        background-color: var(--green_light);
+    }
+}
