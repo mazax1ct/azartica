@@ -1,7 +1,24 @@
 .promocodes {
-    display: grid;
+    display: flex;
     gap: var(--gap);
-    grid-template-columns: repeat(auto-fit, minmax(236px, 1fr));
+    flex-wrap: wrap;
+
+    &:not(:last-child) {
+        margin-bottom: var(--section_indent_min);
+    }
+
+    .promo-card {
+        width: 100%;
+        @media(min-width: 600px) {
+            width: calc(100% / 2 - var(--gap) / 2);
+        }
+        @media(min-width: $md) {
+            width: calc(100% / 3 - var(--gap) / 3 * 2);
+        }
+        @media(min-width: $lg) {
+            width: calc(100% / 6 - var(--gap) / 6 * 5);
+        }
+    }
 }
 
 .promo-card {

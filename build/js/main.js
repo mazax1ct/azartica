@@ -53,6 +53,21 @@ $(document).ready(function() {
       }
     });
   });
+
+  $('.js-select').each(function() {
+    var $p = $(this).closest('.select-wrapper');
+    $(this).select2({
+      dropdownPosition: 'below',
+      dropdownParent: $p,
+      minimumResultsForSearch: Infinity
+    });
+	}).on('select2:open', function (e) {
+    var $p = $(this).closest('.select-wrapper');
+    $p.addClass('open');
+	}).on('select2:close', function (e) {
+    var $p = $(this).closest('.select-wrapper');
+    $p.removeClass('open');
+	});
 });
 
 $(window).on("scroll", resize_scroll).on("resize", resize_scroll);

@@ -44,6 +44,8 @@
             display: block;
             object-fit: cover;
             object-position: center;
+            transition: transform 0.3s;
+            transform: scale(1);
             width: 100%;
             @media(max-width: 600px - 0.02px) {
                 max-height: 300px;

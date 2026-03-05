@@ -1,0 +1,1134 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Азартика</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Azartica" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+
+    <link rel="preload" href="fonts/subset-Inter-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Inter-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css_plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css_plugins/select2.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body class="page page--main">
+    <div class="header-note">
+        <p class="header-note__inner container">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#info_icon" />
+            </svg>
+            Контент для лиц 18+ <span>|</span> Информационно-познавательный портал об азартных играх
+        </p>
+    </div>
+    
+    <div class="header-block">
+        <header class="header compensate-for-scrollbar">
+            <div class="header__inner container">
+                <a class="header__logo" href="#">
+                    <picture>
+                        <source srcset="images/logo.svg" media="(min-width: 768px)">
+                        <img src="images/logo_small.svg" alt="Азартика">
+                    </picture>
+                </a>
+    
+                <nav class="main-menu">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Провайдеры</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Слоты</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Стримеры</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Новости</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Статьи</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Игры</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <div class="search-form">
+                    <form class="search-form__form" action="">
+                        <input class="search-form__input" type="text" name="q" value="" placeholder="Поиск">
+                        <button class="search-form__submit" type="submit" title="Искать">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#search_icon" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+    
+                <button class="js-search-toggler header__search-toggler" type="button" title="Поиск">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#search_icon" />
+                    </svg>
+                </button>
+    
+                <button class="js-main-menu-toggler header__menu-toggler" type="button" title="Меню">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#burger_icon" />
+                    </svg>
+                </button>
+            </div>
+        </header>
+    </div>
+
+    <main class="page__content">
+        <div class="container">
+
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#" title="На главную">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#home_icon" />
+                        </svg>
+                        <span class="sr-only">Главная</span>
+                    </a>
+                </li>
+                <li class="breadcrumbs__item">Стримеры</li>
+            </ul>
+
+            <div class="two-columns">
+                <div class="two-columns__big">
+                    <div class="text-container text-container--small">
+                        <h1>Стримеры</h1>
+
+                        <p>Здесь собраны популярные и новые стримеры, которые ведут трансляции по слотам, казино и смежным темам. Узнай, кто в топе и за кем стоит следить.</p>
+                    </div>
+
+                    <h2>Топ стримеров</h2>
+
+                    <div class="responsive-table top-table">
+                        <table class="">
+                            <tr>
+                                <th>#</th>
+                                <th width="52"></th>
+                                <th>Имя</th>
+                                <th>Средний онлайн</th>
+                                <th>Платформа</th>
+                                <th>Тематика</th>
+                                <th width="182"></th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td><img class="avatar" src="images/content/streamers/avatar.jpg" srcset="images/content/streamers/avatar.jpg 2x" alt="SlotMaster"></td>
+                                <td>
+                                    <p class="title">SlotMaster</p>
+                                </td>
+                                <td>
+                                    75 000+
+                                </td>
+                                <td>
+                                    <div class="platforms">
+                                        <svg class="platform" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#yt_icon" />
+                                        </svg>
+
+                                        <svg class="platform" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#twitch_icon" />
+                                        </svg>
+                                    </div>
+                                </td>
+                                <td>Аналитика Slots</td>
+                                <td><a class="button button--primary" href="#">Перейти в профиль</a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><img class="avatar" src="images/content/streamers/avatar.jpg" srcset="images/content/streamers/avatar.jpg 2x" alt="LuckyFox"></td>
+                                <td>
+                                    <p class="title">LuckyFox</p>
+                                </td>
+                                <td>
+                                    263 000+
+                                </td>
+                                <td>
+                                    <div class="platforms">
+                                        <svg class="platform" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#yt_icon" />
+                                        </svg>
+                                    </div>
+                                </td>
+                                <td>Казино стримы и слоты</td>
+                                <td><a class="button button--primary" href="#">Перейти в профиль</a></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><img class="avatar" src="images/content/streamers/avatar.jpg" srcset="images/content/streamers/avatar.jpg 2x" alt="SpinDoctor"></td>
+                                <td>
+                                    <p class="title">SpinDoctor</p>
+                                </td>
+                                <td>
+                                    39 450+
+                                </td>
+                                <td>
+                                    <div class="platforms">
+                                        <svg class="platform" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#twitch_icon" />
+                                        </svg>
+                                    </div>
+                                </td>
+                                <td>Аналитика Slots</td>
+                                <td><a class="button button--primary" href="#">Перейти в профиль</a></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><img class="avatar" src="images/content/streamers/avatar.jpg" srcset="images/content/streamers/avatar.jpg 2x" alt="CrashZone"></td>
+                                <td>
+                                    <p class="title">CrashZone</p>
+                                </td>
+                                <td>
+                                    75 000+
+                                </td>
+                                <td>
+                                    <div class="platforms">
+                                        <svg class="platform" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#yt_icon" />
+                                        </svg>
+                                    </div>
+                                </td>
+                                <td>Live Dealers</td>
+                                <td><a class="button button--primary" href="#">Перейти в профиль</a></td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td><img class="avatar" src="images/content/streamers/avatar.jpg" srcset="images/content/streamers/avatar.jpg 2x" alt="Ninja8"></td>
+                                <td>
+                                    <p class="title">Ninja8</p>
+                                </td>
+                                <td>
+                                    100 618+
+                                </td>
+                                <td>
+                                    <div class="platforms">
+                                        <svg class="platform" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#twitch_icon" />
+                                        </svg>
+                                    </div>
+                                </td>
+                                <td>Crash</td>
+                                <td><a class="button button--primary" href="#">Перейти в профиль</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="two-columns__small">
+                    <div class="banner">
+                        <a href="#">
+                            <picture>
+                                <source srcset="images/content/banners/banner_right.jpg, images/content/banners/banner_right@2x.jpg 2x" media="(min-width: 1024px)">
+                                <img src="images/content/banners/banner_200.jpg" srcset="images/content/banners/banner_200@2x.jpg 2x" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Фильтры</h2>
+
+            <div class="sorting-block">
+                <div class="tags">
+                    <a class="tag is-active" href="#">Все</a>
+                    <a class="tag" href="#">Twitch</a>
+                    <a class="tag" href="#">YouTube</a>
+                    <a class="tag" href="#">Слоты</a>
+                    <a class="tag" href="#">Казино</a>
+                    <a class="tag" href="#">Crash</a>
+                    <a class="tag" href="#">Покер</a>
+                    <a class="tag" href="#">Live Dealers</a>
+                </div>
+
+                <div class="sorting-block__select">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#sort_icon" />
+                    </svg>
+
+                    <div class="select-wrapper">
+                        <select class="js-select" id="sorting">
+                            <option value="1">По рейтингу</option>
+                            <option value="2">По подписчикам</option>
+                            <option value="3">По новизне</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="streamers-list streamers-list--big">
+                <div class="streamer-card">
+                    <div class="streamer-card__image"><img src="images/content/streamers/img.jpg" srcset="images/content/streamers/img@2x.jpg 2x" alt=""></div>
+
+                    <div class="streamer-card__text-block">
+                        <p class="streamer-card__title"><a href="#">SlotMaster</a></p>
+
+                        <p class="streamer-card__props">Аналитика Slots</p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#platform_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__platform-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#yt_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__platform-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#twitch_icon" />
+                            </svg>
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#subscribe_icon" />
+                            </svg>
+                            75 000 подписчиков
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#online_icon" />
+                            </svg>
+                            1235+ средний онлайн
+                        </p>
+                    </div>
+                </div>
+
+                <div class="streamer-card">
+                    <div class="streamer-card__image"><img src="images/content/streamers/img.jpg" srcset="images/content/streamers/img@2x.jpg 2x" alt=""></div>
+
+                    <div class="streamer-card__text-block">
+                        <p class="streamer-card__title"><a href="#">SlotMaster</a></p>
+
+                        <p class="streamer-card__props">Аналитика Slots</p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#platform_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__platform-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#yt_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__platform-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#twitch_icon" />
+                            </svg>
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#subscribe_icon" />
+                            </svg>
+                            75 000 подписчиков
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#online_icon" />
+                            </svg>
+                            1235+ средний онлайн
+                        </p>
+                    </div>
+                </div>
+
+                <div class="streamer-card">
+                    <div class="streamer-card__image"><img src="images/content/streamers/img.jpg" srcset="images/content/streamers/img@2x.jpg 2x" alt=""></div>
+
+                    <div class="streamer-card__text-block">
+                        <p class="streamer-card__title"><a href="#">SlotMaster</a></p>
+
+                        <p class="streamer-card__props">Аналитика Slots</p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#platform_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__platform-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#yt_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__platform-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#twitch_icon" />
+                            </svg>
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#subscribe_icon" />
+                            </svg>
+                            75 000 подписчиков
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#online_icon" />
+                            </svg>
+                            1235+ средний онлайн
+                        </p>
+                    </div>
+                </div>
+
+                <div class="streamer-card">
+                    <div class="streamer-card__image"><img src="images/content/streamers/img.jpg" srcset="images/content/streamers/img@2x.jpg 2x" alt=""></div>
+
+                    <div class="streamer-card__text-block">
+                        <p class="streamer-card__title"><a href="#">SlotMaster</a></p>
+
+                        <p class="streamer-card__props">Аналитика Slots</p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#platform_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__platform-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#yt_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__platform-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#twitch_icon" />
+                            </svg>
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#subscribe_icon" />
+                            </svg>
+                            75 000 подписчиков
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#online_icon" />
+                            </svg>
+                            1235+ средний онлайн
+                        </p>
+                    </div>
+                </div>
+
+                <div class="streamer-card">
+                    <div class="streamer-card__image"><img src="images/content/streamers/img.jpg" srcset="images/content/streamers/img@2x.jpg 2x" alt=""></div>
+
+                    <div class="streamer-card__text-block">
+                        <p class="streamer-card__title"><a href="#">SlotMaster</a></p>
+
+                        <p class="streamer-card__props">Аналитика Slots</p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#platform_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__platform-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#yt_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__platform-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#twitch_icon" />
+                            </svg>
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#subscribe_icon" />
+                            </svg>
+                            75 000 подписчиков
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#online_icon" />
+                            </svg>
+                            1235+ средний онлайн
+                        </p>
+                    </div>
+                </div>
+
+                <div class="streamer-card">
+                    <div class="streamer-card__image"><img src="images/content/streamers/img.jpg" srcset="images/content/streamers/img@2x.jpg 2x" alt=""></div>
+
+                    <div class="streamer-card__text-block">
+                        <p class="streamer-card__title"><a href="#">SlotMaster</a></p>
+
+                        <p class="streamer-card__props">Аналитика Slots</p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#platform_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__platform-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#yt_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__platform-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#twitch_icon" />
+                            </svg>
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#subscribe_icon" />
+                            </svg>
+                            75 000 подписчиков
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#online_icon" />
+                            </svg>
+                            1235+ средний онлайн
+                        </p>
+                    </div>
+                </div>
+
+                <div class="streamer-card">
+                    <div class="streamer-card__image"><img src="images/content/streamers/img.jpg" srcset="images/content/streamers/img@2x.jpg 2x" alt=""></div>
+
+                    <div class="streamer-card__text-block">
+                        <p class="streamer-card__title"><a href="#">SlotMaster</a></p>
+
+                        <p class="streamer-card__props">Аналитика Slots</p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#platform_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__platform-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#yt_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__platform-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#twitch_icon" />
+                            </svg>
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#subscribe_icon" />
+                            </svg>
+                            75 000 подписчиков
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#online_icon" />
+                            </svg>
+                            1235+ средний онлайн
+                        </p>
+                    </div>
+                </div>
+
+                <div class="streamer-card">
+                    <div class="streamer-card__image"><img src="images/content/streamers/img.jpg" srcset="images/content/streamers/img@2x.jpg 2x" alt=""></div>
+
+                    <div class="streamer-card__text-block">
+                        <p class="streamer-card__title"><a href="#">SlotMaster</a></p>
+
+                        <p class="streamer-card__props">Аналитика Slots</p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#platform_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__platform-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#yt_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__platform-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#twitch_icon" />
+                            </svg>
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#subscribe_icon" />
+                            </svg>
+                            75 000 подписчиков
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#online_icon" />
+                            </svg>
+                            1235+ средний онлайн
+                        </p>
+                    </div>
+                </div>
+
+                <div class="streamer-card">
+                    <div class="streamer-card__image"><img src="images/content/streamers/img.jpg" srcset="images/content/streamers/img@2x.jpg 2x" alt=""></div>
+
+                    <div class="streamer-card__text-block">
+                        <p class="streamer-card__title"><a href="#">SlotMaster</a></p>
+
+                        <p class="streamer-card__props">Аналитика Slots</p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#platform_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__platform-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#yt_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__platform-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#twitch_icon" />
+                            </svg>
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#subscribe_icon" />
+                            </svg>
+                            75 000 подписчиков
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#online_icon" />
+                            </svg>
+                            1235+ средний онлайн
+                        </p>
+                    </div>
+                </div>
+
+                <div class="streamer-card">
+                    <div class="streamer-card__image"><img src="images/content/streamers/img.jpg" srcset="images/content/streamers/img@2x.jpg 2x" alt=""></div>
+
+                    <div class="streamer-card__text-block">
+                        <p class="streamer-card__title"><a href="#">SlotMaster</a></p>
+
+                        <p class="streamer-card__props">Аналитика Slots</p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#platform_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__platform-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#yt_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__platform-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#twitch_icon" />
+                            </svg>
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#subscribe_icon" />
+                            </svg>
+                            75 000 подписчиков
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#online_icon" />
+                            </svg>
+                            1235+ средний онлайн
+                        </p>
+                    </div>
+                </div>
+
+                <div class="streamer-card">
+                    <div class="streamer-card__image"><img src="images/content/streamers/img.jpg" srcset="images/content/streamers/img@2x.jpg 2x" alt=""></div>
+
+                    <div class="streamer-card__text-block">
+                        <p class="streamer-card__title"><a href="#">SlotMaster</a></p>
+
+                        <p class="streamer-card__props">Аналитика Slots</p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#platform_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__platform-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#yt_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__platform-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#twitch_icon" />
+                            </svg>
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#subscribe_icon" />
+                            </svg>
+                            75 000 подписчиков
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#online_icon" />
+                            </svg>
+                            1235+ средний онлайн
+                        </p>
+                    </div>
+                </div>
+
+                <div class="streamer-card">
+                    <div class="streamer-card__image"><img src="images/content/streamers/img.jpg" srcset="images/content/streamers/img@2x.jpg 2x" alt=""></div>
+
+                    <div class="streamer-card__text-block">
+                        <p class="streamer-card__title"><a href="#">SlotMaster</a></p>
+
+                        <p class="streamer-card__props">Аналитика Slots</p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__star-icon filled" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#star_icon" />
+                            </svg>
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#platform_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__platform-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#yt_icon" />
+                            </svg>
+
+                            <svg class="streamer-card__platform-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#twitch_icon" />
+                            </svg>
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#subscribe_icon" />
+                            </svg>
+                            75 000 подписчиков
+                        </p>
+
+                        <p class="streamer-card__props">
+                            <svg class="streamer-card__title-icon" aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#online_icon" />
+                            </svg>
+                            1235+ средний онлайн
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="pager">
+                <li class="pager__item">
+                    <span class="pager__link">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#arrow_left" />
+                        </svg>
+                        Назад
+                    </span>
+                </li>
+                <li class="pager__item">
+                    <a class="pager__link is-active" href="#">1</a>
+                </li>
+                <li class="pager__item">
+                    <a class="pager__link" href="#">2</a>
+                </li>
+                <li class="pager__item">
+                    <a class="pager__link" href="#">3</a>
+                </li>
+                <li class="pager__item">
+                    <a class="pager__link" href="#">...</a>
+                </li>
+                <li class="pager__item">
+                    <a class="pager__link" href="#">67</a>
+                </li>
+                <li class="pager__item">
+                    <a class="pager__link" href="#">68</a>
+                </li>
+                <li class="pager__item">
+                    <a class="pager__link" href="#">
+                        Вперед
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#arrow_right" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="page-bottom">
+                <div class="text-container">
+                    <h2>О стримерах и казино-стримингех</h2>
+
+                    <p>Стримеры по слотам и онлайн-казино стали важной частью индустрии азартных игр, формируя новые форматы контента и влияя на выбор игроков. На этой странице собран каталог стримеров с разной тематикой, аудиторией и стилем подачи —
+                        от крупных каналов до новых авторов. Используйте фильтры и сортировку, чтобы быстро найти интересных стримеров и ознакомиться с их контентом.</p>
+
+                    <p>Помимо развлекательного формата, казино-стриминг позволяет познакомиться с игровыми механиками, бонусными функциями и новыми слотами без необходимости сразу играть самостоятельно. Контент стримеров помогает лучше
+                        ориентироваться в провайдерах, типах игр и популярных форматах, что делает выбор более осознанным для пользователей, интересующихся онлайн-казино.</p>
+                </div>
+
+                <div class="banner banner--200"><a href="#"><img src="images/content/banners/banner_200.jpg" srcset="images/content/banners/banner_200@2x.jpg 2x" alt=""></a></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__top">
+                <div class="footer__top-left">
+                    <div class="footer__logo"><img src="images/logo.svg" alt="Азартика"></div>
+    
+                    <p>Информационный портал об онлайн слотах, провайдерах игр и индустрии iGaming. Не является оператором азартных игр.</p>
+    
+                    <p>Контент для лиц 18+.</p>
+                </div>
+    
+                <ul class="footer-menu">
+                    <li class="footer-menu__title"><a class="footer-menu__link" href="#">Слоты</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Популярные</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Новинки</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">С джекпотом</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Megaways</a></li>
+                </ul>
+    
+                <ul class="footer-menu">
+                    <li class="footer-menu__title"><a class="footer-menu__link" href="#">Провайдеры</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Топ провайдров</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Обзоры</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Рейтинги</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Лицензии</a></li>
+                </ul>
+    
+                <ul class="footer-menu">
+                    <li class="footer-menu__title"><a class="footer-menu__link" href="#">Сообщество</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Стримеры</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Новости</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Статьи</a></li>
+                </ul>
+    
+                <ul class="footer-menu">
+                    <li class="footer-menu__title"><a class="footer-menu__link" href="#">Помощь</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Гайды</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">FAQ</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Контакты</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer__bottom">
+                <ul class="footer-menu">
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Политика конфиденциальности</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Политика обработки персональных данных</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Политика использования файлов cookie</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Предупреждение о рисках</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">О проекте</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Карта сайта</a></li>
+                </ul>
+    
+                <div class="footer__bottom-left">
+                    <p>Внимание: Азартные игры могут вызывать зависимость.<br> Играйте ответственно.<br> Контент предназначен для лиц старше 18 лет.</p>
+                    <p>Информация на сайте носит ознакомительный характер.</p>
+                </div>
+    
+                <div class="footer__bottom-right">
+                    <p>© 2026 Азартика. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    
+    <!--<script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/inputmask-init.js"></script>
+    
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/fancybox-defaults.js"></script>-->
+    
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/select2-addon.js"></script>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>

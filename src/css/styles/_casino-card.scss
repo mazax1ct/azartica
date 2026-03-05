@@ -1,7 +1,21 @@
 .casinos-list {
-    display: grid;
+    display: flex;
     gap: var(--gap);
-    grid-template-columns: repeat(auto-fit, minmax(268px, 1fr));
+    flex-wrap: wrap;
+
+    &:not(:last-child) {
+        margin-bottom: var(--section_indent_min);
+    }
+
+    .casino-card {
+        width: 100%;
+        @media(min-width: 600px) {
+            width: calc(100% / 2 - var(--gap) / 2);
+        }
+        @media(min-width: $md) {
+            width: calc(100% / 3 - var(--gap) / 3 * 2);
+        }
+    }
 }
 
 .casino-card {
@@ -93,11 +107,40 @@
         display: flex;
         gap: 5px;
 
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+
         svg {
             fill: currentColor;
             height: 20px;
             min-width: 20px;
             width: 20px;
+        }
+    }
+
+    &__badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    &__badge {
+        border-radius: 8px;
+        border: 1px solid transparent;
+        font-size: 15px;
+        height: 36px;
+        padding: 7px 8px 6px;
+
+        &--type_1 {
+            background-color: var(--accent);
+            color: var(--white);
+        }
+
+        &--type_2 {
+            background-color: var(--base_bg);
+            border-color: var(--purple_light);
+            color: var(--grey);
         }
     }
 }

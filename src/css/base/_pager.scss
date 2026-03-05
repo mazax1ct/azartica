@@ -1,46 +1,50 @@
 .pager {
     @include list-reset;
     display: flex;
-    gap: 10px;
+    gap: 8px;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: var(--section_vertical_gap);
+    margin-top: var(--section_indent_min);
+
+    &:not(:last-child) {
+        margin-bottom: var(--section_indent_min);
+    }
 
     &__link {
         align-items: center;
-        background-color: var(--white);
-        border-radius: 4px;
-        border: 1px solid var(--grey);
-        color: var(--black);
+        border-radius: 8px;
+        color: var(--grey_dark);
         display: flex;
-        height: 32px;
+        gap: 8px;
+        height: 37px;
         justify-content: center;
-        min-width: 32px;
-        padding-left: 3px;
-        padding-right: 3px;
+        min-width: 34px;
+        padding-left: 12px;
+        padding-right: 12px;
         text-decoration: none;
+        transition: background-color 0.3s;
 
         &.is-active {
-            background-color: var(--accent_2);
-            border-color: var(--accent_2);
+            background-color: var(--accent);
             color: var(--white);
         }
 
         svg {
-            fill: var(--grey);
-            height: 24px;
-            width: 24px;
+            fill: currentColor;
+            height: 16px;
+            min-width: 16px;
+            width: 16px;
         }
     }
 }
 
 a.pager__link {
-    svg {
-        fill: var(--accent_2);
-    }
-    @include hover {
-        svg {
-            fill: var(--accent);
+    color: var(--black);
+
+    &:not(.is-active) {
+        @include hover {
+            background-color: var(--purple_light);
+            color: var(--black);
         }
     }
 }

@@ -14,7 +14,7 @@
     padding: 9px 16px;
     text-decoration: none;
     text-align: center;
-    transition: border-color 0.3s, background-color 0.3s, color 0.3s;
+    transition: border 0.3s, background-color 0.3s, color 0.3s;
 
     &.disabled,
     &:disabled,
@@ -66,6 +66,28 @@
             background-color: var(--grey);
             border-color: var(--grey);
             color: #737373;
+        }
+    }
+
+    &--copy {
+        border: 1px dashed var(--accent);
+        background-color: var(--blue_light);
+        font-weight: 500;
+
+        &:not(.disabled),
+        &:not(:disabled),
+        &:not([data-disabled]) {
+            @include hover {
+                border: 1px solid var(--accent);
+                color: var(--accent);
+            }
+        }
+
+        span {
+            max-width: 160px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
         }
     }
 

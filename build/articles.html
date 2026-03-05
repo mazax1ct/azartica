@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Азартика</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Azartica" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+
+    <link rel="preload" href="fonts/subset-Inter-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Inter-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css_plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css_plugins/select2.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body class="page page--main">
+    <div class="header-note">
+        <p class="header-note__inner container">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#info_icon" />
+            </svg>
+            Контент для лиц 18+ <span>|</span> Информационно-познавательный портал об азартных играх
+        </p>
+    </div>
+    
+    <div class="header-block">
+        <header class="header compensate-for-scrollbar">
+            <div class="header__inner container">
+                <a class="header__logo" href="#">
+                    <picture>
+                        <source srcset="images/logo.svg" media="(min-width: 768px)">
+                        <img src="images/logo_small.svg" alt="Азартика">
+                    </picture>
+                </a>
+    
+                <nav class="main-menu">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Провайдеры</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Слоты</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Стримеры</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Новости</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Статьи</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Игры</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <div class="search-form">
+                    <form class="search-form__form" action="">
+                        <input class="search-form__input" type="text" name="q" value="" placeholder="Поиск">
+                        <button class="search-form__submit" type="submit" title="Искать">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#search_icon" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+    
+                <button class="js-search-toggler header__search-toggler" type="button" title="Поиск">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#search_icon" />
+                    </svg>
+                </button>
+    
+                <button class="js-main-menu-toggler header__menu-toggler" type="button" title="Меню">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#burger_icon" />
+                    </svg>
+                </button>
+            </div>
+        </header>
+    </div>
+
+    <main class="page__content">
+        <div class="container">
+
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#" title="На главную">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#home_icon" />
+                        </svg>
+                        <span class="sr-only">Главная</span>
+                    </a>
+                </li>
+                <li class="breadcrumbs__item">Статьи</li>
+            </ul>
+
+            <div class="articles-top">
+                <div class="article-top article-top--big" style="--shade: red">
+                    <img src="images/content/articles/img_4.jpg" srcset="images/content/articles/img_4@2x.jpg 2x" alt="">
+
+                    <div class="article-top__text-block">
+                        <div class="article-top__top-block">
+                            <p class="badge badge--type_1">Провайдеры и слоты</p>
+                            <p class="article-top__read-time">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clock_icon" />
+                                </svg>
+                                7 мин.
+                            </p>
+                        </div>
+                        <p class="article-top__title"><a href="#">Волатильность в слотах: чем отличается высокая от низкой</a></p>
+                    </div>
+                </div>
+
+                <div class="article-top" style="--shade: green">
+                    <img src="images/content/articles/img_5.jpg" srcset="images/content/articles/img_5@2x.jpg 2x" alt="">
+
+                    <div class="article-top__text-block">
+                        <div class="article-top__top-block">
+                            <p class="badge badge--type_1">Провайдеры и слоты</p>
+                            <p class="article-top__read-time">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clock_icon" />
+                                </svg>
+                                23 мин.
+                            </p>
+                        </div>
+                        <p class="article-top__title"><a href="#">Почему одинаковые слоты ведут себя по‑разному</a></p>
+                    </div>
+                </div>
+
+                <div class="article-top" style="--shade: black">
+                    <img src="images/content/articles/img_5.jpg" srcset="images/content/articles/img_5@2x.jpg 2x" alt="">
+
+                    <div class="article-top__text-block">
+                        <div class="article-top__top-block">
+                            <p class="badge badge--type_2">Провайдеры и слоты</p>
+                            <p class="article-top__read-time">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clock_icon" />
+                                </svg>
+                                23 мин.
+                            </p>
+                        </div>
+                        <p class="article-top__title"><a href="#">Что такое RTP и как его читать</a></p>
+                    </div>
+                </div>
+
+                <div class="article-top" style="--shade: blue">
+                    <img src="images/content/articles/img_5.jpg" srcset="images/content/articles/img_5@2x.jpg 2x" alt="">
+
+                    <div class="article-top__text-block">
+                        <div class="article-top__top-block">
+                            <p class="badge badge--type_3">Провайдеры и слоты</p>
+                            <p class="article-top__read-time">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clock_icon" />
+                                </svg>
+                                23 мин.
+                            </p>
+                        </div>
+                        <p class="article-top__title"><a href="#">10 самых обсуждаемых стримеров слотов</a></p>
+                    </div>
+                </div>
+
+                <div class="article-top" style="--shade: yellow">
+                    <img src="images/content/articles/img_5.jpg" srcset="images/content/articles/img_5@2x.jpg 2x" alt="">
+
+                    <div class="article-top__text-block">
+                        <div class="article-top__top-block">
+                            <p class="badge badge--type_1">Провайдеры и слоты</p>
+                            <p class="article-top__read-time">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clock_icon" />
+                                </svg>
+                                23 мин.
+                            </p>
+                        </div>
+                        <p class="article-top__title"><a href="#">Почему одинаковые слоты ведут себя по‑разному</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <h1>Все cтатьи</h1>
+
+            <div class="tags">
+                <a class="tag is-active" href="#">Все</a>
+                <a class="tag" href="#">Провайдеры и слоты</a>
+                <a class="tag" href="#">События и турниры</a>
+                <a class="tag" href="#">Стримеры</a>
+            </div>
+
+            <div class="articles-list">
+                <div class="article-card">
+                    <div class="article-card__image"><img src="images/content/articles/img_1.jpg" srcset="images/content/articles/img_1@2x.jpg 2x" alt=""></div>
+
+                    <p class="article-card__title"><a href="#">Что такое RTP и как его читать</a></p>
+
+                    <p class="article-card__preview-text">Объясняем, что означает RTP, почему это теоретический показатель и как использовать его при выборе игр.</p>
+
+                    <div class="article-card__bottom">
+                        <p class="article-card__bottom-item">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#likes_icon" />
+                            </svg>
+                            10 364
+                        </p>
+
+                        <p class="article-card__bottom-item">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#clock_icon" />
+                            </svg>
+                            20 мин.
+                        </p>
+
+                        <p class="badge badge--type_3">События и турниры</p>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-card__image"><img src="images/content/articles/img_2.jpg" srcset="images/content/articles/img_2@2x.jpg 2x" alt=""></div>
+
+                    <p class="article-card__title"><a href="#">Волатильность в слотах: чем отличается высокая от низкой</a></p>
+
+                    <p class="article-card__preview-text">Разбираем, как волатильность влияет на частоту выигрышей, размер выплат и стиль игры.</p>
+
+                    <div class="article-card__bottom">
+                        <p class="article-card__bottom-item">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#likes_icon" />
+                            </svg>
+                            1064
+                        </p>
+
+                        <p class="article-card__bottom-item">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#clock_icon" />
+                            </svg>
+                            7 мин.
+                        </p>
+
+                        <p class="badge badge--type_2">Стримеры</p>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-card__image"><img src="images/content/articles/img_3.jpg" srcset="images/content/articles/img_3@2x.jpg 2x" alt=""></div>
+
+                    <p class="article-card__title"><a href="#">Почему одинаковые слоты ведут себя по-разному и от чего это на самом деле зависит</a></p>
+
+                    <p class="article-card__preview-text">Рассказываем о случайности, игровых сессиях и распространённых мифах, которые мешают трезво оценивать результат.</p>
+
+                    <div class="article-card__bottom">
+                        <p class="article-card__bottom-item">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#likes_icon" />
+                            </svg>
+                            164
+                        </p>
+
+                        <p class="article-card__bottom-item">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#clock_icon" />
+                            </svg>
+                            20 мин.
+                        </p>
+
+                        <p class="badge badge--type_1">Провайдеры и слоты</p>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-card__image"><img src="images/content/articles/img_1.jpg" srcset="images/content/articles/img_1@2x.jpg 2x" alt=""></div>
+
+                    <p class="article-card__title"><a href="#">Что такое RTP и как его читать</a></p>
+
+                    <p class="article-card__preview-text">Объясняем, что означает RTP, почему это теоретический показатель и как использовать его при выборе игр.</p>
+
+                    <div class="article-card__bottom">
+                        <p class="article-card__bottom-item">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#likes_icon" />
+                            </svg>
+                            10 364
+                        </p>
+
+                        <p class="article-card__bottom-item">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#clock_icon" />
+                            </svg>
+                            20 мин.
+                        </p>
+
+                        <p class="badge badge--type_3">События и турниры</p>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-card__image"><img src="images/content/articles/img_2.jpg" srcset="images/content/articles/img_2@2x.jpg 2x" alt=""></div>
+
+                    <p class="article-card__title"><a href="#">Волатильность в слотах: чем отличается высокая от низкой</a></p>
+
+                    <p class="article-card__preview-text">Разбираем, как волатильность влияет на частоту выигрышей, размер выплат и стиль игры.</p>
+
+                    <div class="article-card__bottom">
+                        <p class="article-card__bottom-item">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#likes_icon" />
+                            </svg>
+                            1064
+                        </p>
+
+                        <p class="article-card__bottom-item">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#clock_icon" />
+                            </svg>
+                            7 мин.
+                        </p>
+
+                        <p class="badge badge--type_2">Стримеры</p>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-card__image"><img src="images/content/articles/img_3.jpg" srcset="images/content/articles/img_3@2x.jpg 2x" alt=""></div>
+
+                    <p class="article-card__title"><a href="#">Почему одинаковые слоты ведут себя по-разному и от чего это на самом деле зависит</a></p>
+
+                    <p class="article-card__preview-text">Рассказываем о случайности, игровых сессиях и распространённых мифах, которые мешают трезво оценивать результат.</p>
+
+                    <div class="article-card__bottom">
+                        <p class="article-card__bottom-item">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#likes_icon" />
+                            </svg>
+                            164
+                        </p>
+
+                        <p class="article-card__bottom-item">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#clock_icon" />
+                            </svg>
+                            20 мин.
+                        </p>
+
+                        <p class="badge badge--type_1">Провайдеры и слоты</p>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-card__image"><img src="images/content/articles/img_1.jpg" srcset="images/content/articles/img_1@2x.jpg 2x" alt=""></div>
+
+                    <p class="article-card__title"><a href="#">Что такое RTP и как его читать</a></p>
+
+                    <p class="article-card__preview-text">Объясняем, что означает RTP, почему это теоретический показатель и как использовать его при выборе игр.</p>
+
+                    <div class="article-card__bottom">
+                        <p class="article-card__bottom-item">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#likes_icon" />
+                            </svg>
+                            10 364
+                        </p>
+
+                        <p class="article-card__bottom-item">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#clock_icon" />
+                            </svg>
+                            20 мин.
+                        </p>
+
+                        <p class="badge badge--type_3">События и турниры</p>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-card__image"><img src="images/content/articles/img_2.jpg" srcset="images/content/articles/img_2@2x.jpg 2x" alt=""></div>
+
+                    <p class="article-card__title"><a href="#">Волатильность в слотах: чем отличается высокая от низкой</a></p>
+
+                    <p class="article-card__preview-text">Разбираем, как волатильность влияет на частоту выигрышей, размер выплат и стиль игры.</p>
+
+                    <div class="article-card__bottom">
+                        <p class="article-card__bottom-item">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#likes_icon" />
+                            </svg>
+                            1064
+                        </p>
+
+                        <p class="article-card__bottom-item">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#clock_icon" />
+                            </svg>
+                            7 мин.
+                        </p>
+
+                        <p class="badge badge--type_2">Стримеры</p>
+                    </div>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-card__image"><img src="images/content/articles/img_3.jpg" srcset="images/content/articles/img_3@2x.jpg 2x" alt=""></div>
+
+                    <p class="article-card__title"><a href="#">Почему одинаковые слоты ведут себя по-разному и от чего это на самом деле зависит</a></p>
+
+                    <p class="article-card__preview-text">Рассказываем о случайности, игровых сессиях и распространённых мифах, которые мешают трезво оценивать результат.</p>
+
+                    <div class="article-card__bottom">
+                        <p class="article-card__bottom-item">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#likes_icon" />
+                            </svg>
+                            164
+                        </p>
+
+                        <p class="article-card__bottom-item">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#clock_icon" />
+                            </svg>
+                            20 мин.
+                        </p>
+
+                        <p class="badge badge--type_1">Провайдеры и слоты</p>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="pager">
+                <li class="pager__item">
+                    <span class="pager__link">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#arrow_left" />
+                        </svg>
+                        Назад
+                    </span>
+                </li>
+                <li class="pager__item">
+                    <a class="pager__link is-active" href="#">1</a>
+                </li>
+                <li class="pager__item">
+                    <a class="pager__link" href="#">2</a>
+                </li>
+                <li class="pager__item">
+                    <a class="pager__link" href="#">3</a>
+                </li>
+                <li class="pager__item">
+                    <a class="pager__link" href="#">...</a>
+                </li>
+                <li class="pager__item">
+                    <a class="pager__link" href="#">67</a>
+                </li>
+                <li class="pager__item">
+                    <a class="pager__link" href="#">68</a>
+                </li>
+                <li class="pager__item">
+                    <a class="pager__link" href="#">
+                        Вперед
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#arrow_right" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="page-bottom">
+                <div class="text-container">
+                    <h2>О статьях и материалах сайта</h2>
+
+                    <p>В разделе статей собраны информационные материалы об онлайн-казино, слотах, провайдерах и связанных с ними темах. Публикации помогают разобраться в игровых механиках, форматах контента и ключевых тенденциях индустрии,
+                        предоставляя структурированную и актуальную информацию.</p>
+
+                    <p>Статьи охватывают как базовые темы для знакомства с рынком, так и более узкие вопросы, связанные с новыми слотами, турнирами и стримингом. Материалы регулярно обновляются и подходят для пользователей, которые хотят глубже
+                        разобраться в индустрии и следить за её развитием.</p>
+                </div>
+
+                <div class="banner banner--200"><a href="#"><img src="images/content/banners/banner_200.jpg" srcset="images/content/banners/banner_200@2x.jpg 2x" alt=""></a></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__top">
+                <div class="footer__top-left">
+                    <div class="footer__logo"><img src="images/logo.svg" alt="Азартика"></div>
+    
+                    <p>Информационный портал об онлайн слотах, провайдерах игр и индустрии iGaming. Не является оператором азартных игр.</p>
+    
+                    <p>Контент для лиц 18+.</p>
+                </div>
+    
+                <ul class="footer-menu">
+                    <li class="footer-menu__title"><a class="footer-menu__link" href="#">Слоты</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Популярные</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Новинки</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">С джекпотом</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Megaways</a></li>
+                </ul>
+    
+                <ul class="footer-menu">
+                    <li class="footer-menu__title"><a class="footer-menu__link" href="#">Провайдеры</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Топ провайдров</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Обзоры</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Рейтинги</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Лицензии</a></li>
+                </ul>
+    
+                <ul class="footer-menu">
+                    <li class="footer-menu__title"><a class="footer-menu__link" href="#">Сообщество</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Стримеры</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Новости</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Статьи</a></li>
+                </ul>
+    
+                <ul class="footer-menu">
+                    <li class="footer-menu__title"><a class="footer-menu__link" href="#">Помощь</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Гайды</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">FAQ</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Контакты</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer__bottom">
+                <ul class="footer-menu">
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Политика конфиденциальности</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Политика обработки персональных данных</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Политика использования файлов cookie</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Предупреждение о рисках</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">О проекте</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Карта сайта</a></li>
+                </ul>
+    
+                <div class="footer__bottom-left">
+                    <p>Внимание: Азартные игры могут вызывать зависимость.<br> Играйте ответственно.<br> Контент предназначен для лиц старше 18 лет.</p>
+                    <p>Информация на сайте носит ознакомительный характер.</p>
+                </div>
+    
+                <div class="footer__bottom-right">
+                    <p>© 2026 Азартика. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    
+    <!--<script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/inputmask-init.js"></script>
+    
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/fancybox-defaults.js"></script>-->
+    
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/select2-addon.js"></script>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>

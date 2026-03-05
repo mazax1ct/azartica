@@ -1,10 +1,11 @@
 .news-streamers {
-    &:not(:last-child) {
-        margin-bottom: var(--section_bottom_padding_min);
-    }
     @media(min-width: $md) {
         display: flex;
         gap: var(--gap);
+    }
+
+    &:not(:last-child) {
+        margin-bottom: var(--section_indent_min);
     }
 
     &__news {
@@ -13,6 +14,7 @@
         }
         @media(min-width: $md) {
             padding-top: 30px;
+            min-width: 40.8%;
             width: 40.8%;
         }
     }

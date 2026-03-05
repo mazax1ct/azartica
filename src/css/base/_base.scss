@@ -44,13 +44,13 @@ html {
     &__content {
         flex: 1 0 auto;
         overflow: hidden;
-        padding-bottom: clamp(var(--section_bottom_padding_min), 5.2125vw, var(--section_bottom_padding_max));
+        padding-bottom: clamp(var(--section_indent_min), 5.2125vw, var(--section_indent_max));
     }
 }
 
 .section {
-    padding-top: clamp(var(--section_top_padding_min), 4.25vw, var(--section_top_padding_max));
-    padding-bottom: clamp(var(--section_bottom_padding_min), 5.2125vw, var(--section_bottom_padding_max));
+    padding-top: clamp(var(--section_indent_min), 4.25vw, var(--section_indent_max));
+    padding-bottom: clamp(var(--section_indent_min), 5.2125vw, var(--section_indent_max));
 
     &--white {
         background-color: var(--white);
@@ -58,7 +58,7 @@ html {
 
     &--start {
         padding-top: 0;
-        padding-bottom: var(--section_bottom_padding_min);
+        padding-bottom: var(--section_indent_min);
     }
 
     &:not(.section--white):last-child {
@@ -102,6 +102,59 @@ html {
         margin-left: calc(-50vw + var(--container_max_width) / 2 - var(--container_padding));
         margin-right: calc(-50vw + var(--container_max_width) / 2 - var(--container_padding));
     }
+}
+
+.two-columns {
+    @media(min-width: $md) {
+        display: flex;
+        gap: var(--gap);
+    }
+
+    &:not(:last-child) {
+        margin-bottom: var(--section_indent_min);
+    }
+
+    &__big {
+        @media(min-width: $md) {
+            width: calc(100% - var(--gap) / 2 - 24.014%);
+        }
+    }
+
+    &__small {
+        @media(min-width: $md) {
+            min-width: 24.014%;
+            width: 24.014%;
+        }
+        @media(max-width: $md - 0.02px) {
+            margin-top: 30px;
+        }
+
+        &--mobile_hidden {
+            @media(max-width: $md - 0.02px) {
+                display: none;
+            }
+        }
+
+        .banner {
+            @media(max-width: $md - 0.02px) {
+                height: 200px;
+            }
+        }
+    }
+}
+
+.text-container {
+    max-width: 1130px;
+
+    &--small {
+        max-width: 750px;
+    }
+}
+
+.page-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(var(--section_indent_min), 4.25vw, var(--section_indent_max));
 }
 
 .h1,
@@ -351,8 +404,8 @@ table {
     color: var(--accent);
 }
 
-.grey-color {
-    color: var(--grey);
+.grey-dark {
+    color: var(--grey_dark);
 }
 
 hr {

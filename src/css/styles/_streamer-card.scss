@@ -1,7 +1,32 @@
 .streamers-list {
-    display: grid;
+    display: flex;
     gap: var(--gap);
-    grid-template-columns: repeat(auto-fit, minmax(236px, 1fr));
+    flex-wrap: wrap;
+
+    &:not(:last-child) {
+        margin-bottom: var(--section_indent_min);
+    }
+
+    .streamer-card {
+        width: 100%;
+        @media(min-width: 600px) {
+            width: calc(100% / 2 - var(--gap) / 2);
+        }
+        @media(min-width: $lg) {
+            width: calc(100% / 3 - var(--gap) / 3 * 2);
+        }
+    }
+
+    &--big {
+        .streamer-card {
+            @media(min-width: $md) {
+                width: calc(100% / 3 - var(--gap) / 3 * 2);
+            }
+            @media(min-width: $lg) {
+                width: calc(100% / 4 - var(--gap) / 4 * 3);
+            }
+        }
+    }
 }
 
 .streamer-card {
@@ -10,7 +35,7 @@
     background-color: var(--white);
     box-shadow: var(--box_shadow_default);
     display: flex;
-    flex-direction: column;
+    gap: 16px;
     overflow: hidden;
     padding: 20px;
     position: relative;
@@ -31,6 +56,7 @@
     }
 
     &--small {
+        flex-direction: column;
         text-align: center;
 
         .streamer-card__image {
@@ -38,15 +64,23 @@
             margin-right: auto;
         }
 
-        .streamer-card__platforms {
+        .streamer-card__props {
             justify-content: center;
+
+            &:not(:last-child) {
+                margin-bottom: 0;
+            }
+        }
+
+        .button {
+            margin-top: 15px;
         }
     }
 
     &__image {
         border-radius: 50%;
         height: 60px;
-        margin-bottom: 16px;
+        min-width: 60px;
         overflow: hidden;
         width: 60px;
 
@@ -76,23 +110,39 @@
         }
     }
 
-    &__platforms {
+    &__props {
+        align-items: center;
+        color: var(--grey);
         display: flex;
         gap: 5px;
         flex-wrap: wrap;
+
+        &:not(:last-child) {
+            margin-bottom: 10px;
+        }
     }
 
-    &__platform {
+    &__star-icon {
+        fill: var(--grey_light);
+        height: 24px;
+        min-width: 24px;
+        width: 24px;
+
+        &.filled {
+            fill: var(--yellow);
+        }
+    }
+
+    &__title-icon {
+        fill: var(--purple);
+        height: 24px;
+        min-width: 24px;
+        width: 24px;
+    }
+
+    &__platform-icon {
         height: 32px;
         min-width: 32px;
         width: 32px;
-    }
-
-    &__viewers {
-        color: var(--grey);
-
-        &:not(:last-child) {
-            margin-bottom: 16px;
-        }
     }
 }

@@ -1,0 +1,47 @@
+.filter {
+    border-radius: var(--border_radius_default);
+    background-color: var(--white);
+    box-shadow: var(--box_shadow_default);
+    padding: 20px;
+
+    &:not(:last-child) {
+        margin-bottom: var(--gap);
+    }
+
+    &__columns {
+        @media(min-width: $sm) {
+            display: flex;
+            gap: var(--gap);
+            flex-wrap: wrap;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: var(--gap);
+        }
+    }
+
+    &__column {
+        @media(max-width: $sm - 0.02px) {
+            margin-bottom: var(--gap);
+        }
+        @media(min-width: $sm) {
+            width: calc(100% / 3 - var(--gap) * 2 / 3);
+        }
+    }
+
+    &__label {
+        display: block;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    .tags {
+        &:not(:last-child) {
+            margin-bottom: var(--gap);
+        }
+    }
+
+    &__submit {
+        width: 100%;
+    }
+}

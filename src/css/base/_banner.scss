@@ -6,7 +6,7 @@
     overflow: hidden;
 
     &:not(:last-child) {
-        margin-bottom: clamp(var(--section_top_padding_min), 4.25vw, var(--section_top_padding_max));
+        margin-bottom: clamp(var(--section_indent_min), 4.25vw, var(--section_indent_max));
     }
     @include hover {
         img {
@@ -20,6 +20,12 @@
 
     &--200 {
         height: 200px;
+    }
+
+    a,
+    picture {
+        display: block;
+        height: 100%;
     }
 
     img {
