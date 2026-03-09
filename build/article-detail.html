@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Азартика</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Azartica" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+
+    <link rel="preload" href="fonts/subset-Inter-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Inter-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css_plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css_plugins/select2.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body class="page page--main">
+    <div class="header-note">
+        <p class="header-note__inner container">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#info_icon" />
+            </svg>
+            Контент для лиц 18+ <span>|</span> Информационно-познавательный портал об азартных играх
+        </p>
+    </div>
+    
+    <div class="header-block">
+        <header class="header compensate-for-scrollbar">
+            <div class="header__inner container">
+                <a class="header__logo" href="#">
+                    <picture>
+                        <source srcset="images/logo.svg" media="(min-width: 768px)">
+                        <img src="images/logo_small.svg" alt="Азартика">
+                    </picture>
+                </a>
+    
+                <nav class="main-menu">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Провайдеры</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Слоты</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Стримеры</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Новости</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Статьи</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Игры</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <div class="search-form">
+                    <form class="search-form__form" action="">
+                        <input class="search-form__input" type="text" name="q" value="" placeholder="Поиск">
+                        <button class="search-form__submit" type="submit" title="Искать">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#search_icon" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+    
+                <button class="js-search-toggler header__search-toggler" type="button" title="Поиск">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#search_icon" />
+                    </svg>
+                </button>
+    
+                <button class="js-main-menu-toggler header__menu-toggler" type="button" title="Меню">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#burger_icon" />
+                    </svg>
+                </button>
+            </div>
+        </header>
+    </div>
+
+    <main class="page__content">
+        <div class="container">
+
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#" title="На главную">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#home_icon" />
+                        </svg>
+                        <span class="sr-only">Главная</span>
+                    </a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#">Статьи</a>
+                </li>
+                <li class="breadcrumbs__item">Что такое RTP в слотах и как он влияет на игру</li>
+            </ul>
+
+            <div class="two-columns">
+                <div class="two-columns__big">
+                    <figure>
+                        <img src="images/content/articles/img_6.jpg" srcset="images/content/articles/img_6@2x.jpg 2x" alt="">
+                    </figure>
+                </div>
+
+                <div class="two-columns__small">
+                    <div class="banner">
+                        <a href="#">
+                            <picture>
+                                <source srcset="images/content/banners/banner_right_small.jpg, images/content/banners/banner_right_small@2x.jpg 2x" media="(min-width: 1024px)">
+                                <img src="images/content/banners/banner_200.jpg" srcset="images/content/banners/banner_200@2x.jpg 2x" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="article-detail two-columns">
+                <div class="two-columns__big">
+                    <div class="two-columns__section">
+                        <p class="article-tags"><span class="badge badge--type_3">События и турниры</span> <span class="badge badge--type_1">Стримеры</span> <span class="badge badge--type_2">Обзор</span></p>
+
+                        <h1 class="h2">Что такое RTP в слотах и как он влияет на игру</h1>
+
+                        <p>RTP — один из ключевых показателей в слотах онлайн-казино. В этой статье разберёмся, что означает RTP, как он рассчитывается и стоит ли ориентироваться на него при выборе игры.</p>
+
+                        <p class="article-props">
+                            <time datetime="2026-01-25">25.01.2026</time>
+
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#eye_icon" />
+                                </svg>
+                                7 427
+                            </span>
+
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clock_icon" />
+                                </svg>
+                                20 мин.
+                            </span>
+
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#likes_icon" />
+                                </svg>
+                                10 364
+                            </span>
+
+                            <span>
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#comment_icon" />
+                                </svg>
+                                15
+                            </span>
+                        </p>
+
+                        <h2>Содержание</h2>
+
+                        <ul class="article-anchors">
+                            <li><a href="#1">Что такое RTP в слотах</a></li>
+                            <li><a href="#2">Как рассчитывается RTP</a></li>
+                            <li><a href="#3">RTP и волатильность — в чём разница</a></li>
+                            <li><a href="#4">Какой RTP считается хорошим</a></li>
+                        </ul>
+
+                        <h2 id="1">Что такое RTP в слотах (H2)</h2>
+
+                        <p>RTP (Return to Player) — это теоретический процент возврата средств игроку на длинной дистанции. Он показывает, какую часть всех ставок слот возвращает в виде выигрышей.</p>
+
+                        <p>Например, если RTP слота составляет 96%, это означает, что в среднем слот возвращает игрокам 96 рублей с каждых 100 рублей ставок.</p>
+
+                        <div class="responsive-table">
+                            <table>
+                                <tr>
+                                    <th>Параметр</th>
+                                    <th>Информация</th>
+                                </tr>
+                                <tr>
+                                    <td>Платформа</td>
+                                    <td>Twitch</td>
+                                </tr>
+                                <tr>
+                                    <td>Подписчики</td>
+                                    <td>75 000+</td>
+                                </tr>
+                                <tr>
+                                    <td>Средний онлайн</td>
+                                    <td>950+</td>
+                                </tr>
+                                <tr>
+                                    <td>Стримы/нед</td>
+                                    <td>5</td>
+                                </tr>
+                                <tr>
+                                    <td>Средняя длительность</td>
+                                    <td>3ч</td>
+                                </tr>
+                                <tr>
+                                    <td>Основные игры</td>
+                                    <td>Slots, Crash, Live Dealers</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <p>Эта таблица даёт полный обзор ключевых метрик стримера. Она помогает понять его активность, популярность и специализацию — всё, что важно для выбора стримера, за которым стоит следить.</p>
+
+                        <h2 id="2">Как рассчитывается RTP</h2>
+
+                        <p>LuckyFox привлекает внимание аудитории благодаря сочетанию аналитики, развлечения и живого общения:</p>
+
+                        <ul>
+                            <li>Детальные разборы игровых механик</li>
+                            <li>Практические стратегии для slots и crash</li>
+                            <li>Живой чат и ответы в эфире</li>
+                            <li>Регулярное расписание стримов</li>
+                        </ul>
+
+                        <p>Каждый из этих пунктов отражает, что именно ценят зрители: не просто игровое видео, а разборы, анализ и активное вовлечение в процесс. Это делает LuckyFox интересным как новичкам, так и опытным игрокам.</p>
+
+                        <h2 id="3">RTP и волатильность — в чём разница</h2>
+
+                        <p>LuckyFox охватывает несколько игровых категорий, каждая из которых имеет свою игровую динамику:</p>
+
+                        <ol>
+                            <li>Слоты — разбор бонусов и математических параметров.</li>
+                            <li>Crash-игры — управление банкроллом и риск-менеджмент.</li>
+                            <li>Live-дилеры — взаимодействие с игровыми дилерами.</li>
+                            <li>Турниры — тактика участия и призовые стратегии.</li>
+                        </ol>
+
+                        <p>Понимание этих форматов помогает лучше ориентироваться в стримах LuckyFox и выбирать те эфиры, которые подходят именно под ваш уровень и интересы.</p>
+
+                        <div class="info-block info-block--type_2">
+                            <p>Стримы LuckyFox носят информационный и развлекательный характер. Контент не гарантирует выигрыша и не является рекомендацией для ставок с реальными деньгами. Азартные игры могут привести к потерям.</p>
+                        </div>
+
+                        <p>Участие в азартных играх предполагает риск, и информация на странице — это аналитика, а не гарантия успеха.</p>
+
+                        <h2 id="4">Какой RTP считается хорошим</h2>
+
+                        <div class="responsive-table">
+                            <table>
+                                <tr>
+                                    <th>День недели</th>
+                                    <th>Время (+3 GMT)</th>
+                                    <th>Формат</th>
+                                </tr>
+
+                                <tr>
+                                    <td>Понедельник</td>
+                                    <td>19:00–22:00</td>
+                                    <td>Slots</td>
+                                </tr>
+                                <tr>
+                                    <td>Понедельник</td>
+                                    <td>19:00–22:00</td>
+                                    <td>Slots</td>
+                                </tr>
+                                <tr>
+                                    <td>Понедельник</td>
+                                    <td>19:00–22:00</td>
+                                    <td>Slots</td>
+                                </tr>
+                                <tr>
+                                    <td>Понедельник</td>
+                                    <td>19:00–22:00</td>
+                                    <td>Slots</td>
+                                </tr>
+                                <tr>
+                                    <td>Понедельник</td>
+                                    <td>19:00–22:00</td>
+                                    <td>Slots</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                        <p>План трансляций поможет спланировать ваше время так, чтобы не пропустить интересующие эфиры. Форматы указывают, на каком типе контента стример сосредоточится в конкретный день.</p>
+
+                        <figure>
+                            <img src="images/content/articles/img_7.jpg" srcset="images/content/articles/img_7@2x.jpg 2x" alt="">
+                            <figcaption>Фрагмент прямого эфира LuckyFox: аналитика двух кеш-столов одновременно — справа турнир CS50 Sunday Snowstorm с призовым пулом, слева Rush & Cash с динамическими баттлами.</figcaption>
+                        </figure>
+
+                        <p>По итогам 2025 года Tigre de Cristal посетили около 383 000 человек. Доля иностранных туристов составила около 17%, что выше среднего по России. Эти показатели показывают рост интереса и успешное развитие игорной зоны
+                            «Приморье».</p>
+
+                        <h2>Часто задаваемые вопросы</h2>
+
+                        <div class="accordion">
+                            <div class="accordion__title-block">
+                                <p class="accordion__title">На каких платформах транслирует LuckyFox?</p>
+
+                                <button class="js-accordion-toggler accordion__toggler" type="button">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#plus_icon" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="accordion__body">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod, quo. Enim quasi illo, totam pariatur odio eveniet, fugiat repellat aut aspernatur voluptatum corrupti nostrum magni nemo quos id, hic nihil!</p>
+                                <p>Natus voluptatibus, totam placeat, accusamus cum vero blanditiis nihil odit. At voluptatum velit illum vel ab, ea aliquam fugiat nostrum! Voluptatum, facere.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion">
+                            <div class="accordion__title-block">
+                                <p class="accordion__title">Какие игры чаще всего разбираются в стримах?</p>
+
+                                <button class="js-accordion-toggler accordion__toggler" type="button">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#plus_icon" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="accordion__body">
+                                <p>Комплекс расположен примерно в 20 минутах от Международного аэропорта Владивосток.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion">
+                            <div class="accordion__title-block">
+                                <p class="accordion__title">Есть ли плейлисты с записями?</p>
+
+                                <button class="js-accordion-toggler accordion__toggler" type="button">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#plus_icon" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="accordion__body">
+                                <p>Комплекс расположен примерно в 20 минутах от Международного аэропорта Владивосток.</p>
+                            </div>
+                        </div>
+
+                        <div class="accordion">
+                            <div class="accordion__title-block">
+                                <p class="accordion__title">Проводятся ли стримы с участием зрителей?</p>
+
+                                <button class="js-accordion-toggler accordion__toggler" type="button">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#plus_icon" />
+                                    </svg>
+                                </button>
+                            </div>
+
+                            <div class="accordion__body">
+                                <p>Комплекс расположен примерно в 20 минутах от Международного аэропорта Владивосток.</p>
+                            </div>
+                        </div>
+
+                        <div class="article-bottom">
+                            <div class="article-author">
+                                <div class="article-author__avatar"><img src="images/content/news/author.jpg" srcset="images/content/news/author@2x.jpg 2x" alt="Иван Иванов"></div>
+
+                                <div class="article-author__text-block">
+                                    <p class="article-author__name">Иван Иванов</p>
+
+                                    <p class="article-author__about">Обзорщик казино, эксперт по покеру и слотам. Выиграл 100500 денег в казино</p>
+
+                                    <a class="button button--secondary" href="#">Читать другие обзоры автора</a>
+                                </div>
+                            </div>
+
+                            <div class="article-bottom__rating-share">
+                                <div class="article-rating">
+                                    <p class="article-rating__title">Всего оценок — 1376</p>
+                                    <div class="article-rating__stars">
+                                        <svg class="filled" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#star_icon" />
+                                        </svg>
+
+                                        <svg class="filled" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#star_icon" />
+                                        </svg>
+
+                                        <svg class="filled" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#star_icon" />
+                                        </svg>
+
+                                        <svg class="filled" aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#star_icon" />
+                                        </svg>
+
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#star_icon" />
+                                        </svg>
+                                    </div>
+                                </div>
+
+                                <div class="article-share">
+                                    <p class="article-share__title">Поделиться</p>
+
+                                    <div class="article-share__links">
+                                        <a class="article-share__link" href="#" title="Telegram">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#tg_icon" />
+                                            </svg>
+                                        </a>
+
+                                        <a class="article-share__link" href="#" title="WhatsApp">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#wa_icon" />
+                                            </svg>
+                                        </a>
+
+                                        <a class="article-share__link" href="#" title="Вконтакте">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#vk_icon" />
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="two-columns__section">
+                        <div class="comments">
+                            <form class="comments__form">
+                                <div class="comments__form-inputs">
+                                    <label class="input-group">
+                                        <input class="input error" type="text" name="name" value="">
+                        
+                                        <span class="input-group__label">Ваше имя <span class="required">*</span></span>
+                        
+                                        <span class="error-text">Ошибка!</span>
+                                    </label>
+                        
+                                    <label class="input-group">
+                                        <input class="input" type="text" name="email" value="">
+                                        <span class="input-group__label">Ваш email</span>
+                                    </label>
+                                </div>
+                        
+                                <label class="input-group">
+                                    <textarea class="textarea" name="comment">Давно смотрю его, очень нравится как с юмором ведет стримы, после работы самое оно глянуть за ужином|</textarea>
+                                    <span class="input-group__label">Ваш комментарий</span>
+                                </label>
+                        
+                                <button class="button button--primary" type="submit">Отправить</button>
+                            </form>
+                        
+                            <div class="comments__title-block">
+                                <p class="comments__title">236 комментариев</p>
+                        
+                                <div class="sorting-select">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#sort_icon" />
+                                    </svg>
+                        
+                                    <div class="select-wrapper">
+                                        <select class="js-select" id="sorting">
+                                            <option value="1">Старые</option>
+                                            <option value="2">Новые</option>
+                                            <option value="3">Популярные</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        
+                            <div class="comment">
+                                <div class="comment__author">
+                                    <img class="comment__author-avatar" src="images/content/news/comment_avatar.svg" alt="">
+                        
+                                    <div>
+                                        <p class="comment__author-name">Никита</p>
+                                        <time class="comment__date" datetime="2026-01-21T10:39">21.01 в 10:39</time>
+                                    </div>
+                                </div>
+                        
+                                <div class="comment__text">
+                                    <p>Подписан давно, были и жирные заносы, и полный слив. В целом стример честный, без сказок про «стратегии, которые всегда работают». Для новичков — норм, но голову включать всё равно нужно</p>
+                                </div>
+                        
+                                <div class="comment__controls">
+                                    <button class="comment__answer-button" type="button">Ответить</button>
+                        
+                                    <div class="comment__likes">
+                                        <button class="comment__likes-button" type="button" title="Увеличить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#plus_icon" />
+                                            </svg>
+                                        </button>
+                        
+                                        <div class="comment__likes-count positive">6</div>
+                        
+                                        <button class="comment__likes-button" type="button" title="Уменьшить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#minus_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                        
+                                    <button class="comment__copy-link-button" type="button" title="Скопировать ссылку">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#link_icon" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        
+                            <div class="comment">
+                                <div class="comment__author">
+                                    <img class="comment__author-avatar" src="images/content/news/comment_avatar.svg" alt="">
+                        
+                                    <div>
+                                        <p class="comment__author-name">Kisly</p>
+                                        <time class="comment__date" datetime="2026-01-23T13:02">23.01 в 13:02</time>
+                                    </div>
+                                </div>
+                        
+                                <div class="comment__text">
+                                    <p>Смотрю в основном ради слотов, которые он показывает. Иногда реально попадаются интересные варианты, про которые раньше не слышал.</p>
+                                    <p>А кто знает, он реально играет на свои или это демо?</p>
+                                </div>
+                        
+                                <div class="comment__controls">
+                                    <button class="comment__answer-button" type="button">Ответить</button>
+                        
+                                    <div class="comment__likes">
+                                        <button class="comment__likes-button" type="button" title="Увеличить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#plus_icon" />
+                                            </svg>
+                                        </button>
+                        
+                                        <div class="comment__likes-count positive">20</div>
+                        
+                                        <button class="comment__likes-button" type="button" title="Уменьшить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#minus_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                        
+                                    <button class="comment__copy-link-button" type="button" title="Скопировать ссылку">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#link_icon" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        
+                            <div class="comment comment--answer">
+                                <div class="comment__author">
+                                    <img class="comment__author-avatar" src="images/content/news/comment_avatar.svg" alt="">
+                        
+                                    <div>
+                                        <p class="comment__author-name">Sheharhoret</p>
+                                        <time class="comment__date" datetime="2026-01-23T13:12">23.01 в 13:12</time>
+                                    </div>
+                                </div>
+                        
+                                <div class="comment__text">
+                                    <p><b>Kisly</b>, Говорил на стриме, что депозит свой, но кто его знает</p>
+                                </div>
+                        
+                                <div class="comment__controls">
+                                    <button class="comment__answer-button" type="button">Ответить</button>
+                        
+                                    <div class="comment__likes">
+                                        <button class="comment__likes-button" type="button" title="Увеличить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#plus_icon" />
+                                            </svg>
+                                        </button>
+                        
+                                        <div class="comment__likes-count negative">-1</div>
+                        
+                                        <button class="comment__likes-button" type="button" title="Уменьшить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#minus_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                        
+                                    <button class="comment__copy-link-button" type="button" title="Скопировать ссылку">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#link_icon" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        
+                            <div class="comment comment--answer_answer">
+                                <div class="comment__author">
+                                    <img class="comment__author-avatar" src="images/content/news/comment_avatar.svg" alt="">
+                        
+                                    <div>
+                                        <p class="comment__author-name">Влад</p>
+                                        <time class="comment__date" datetime="2026-01-23T13:14">23.01 в 13:14</time>
+                                    </div>
+                                </div>
+                        
+                                <div class="comment__text">
+                                    <p><b>Sheharhoret</b>, ну да, проверить сложно, но выглядит правдоподобно.</p>
+                                </div>
+                        
+                                <div class="comment__controls">
+                                    <button class="comment__answer-button" type="button">Ответить</button>
+                        
+                                    <div class="comment__likes">
+                                        <button class="comment__likes-button" type="button" title="Увеличить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#plus_icon" />
+                                            </svg>
+                                        </button>
+                        
+                                        <div class="comment__likes-count">0</div>
+                        
+                                        <button class="comment__likes-button" type="button" title="Уменьшить">
+                                            <svg aria-hidden="true">
+                                                <use xlink:href="images/sprite.svg#minus_icon" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                        
+                                    <button class="comment__copy-link-button" type="button" title="Скопировать ссылку">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#link_icon" />
+                                        </svg>
+                                    </button>
+                                </div>
+                        
+                                <form class="comments__form">
+                                    <label class="input-group">
+                                        <textarea class="textarea" name="comment"></textarea>
+                                        <span class="input-group__label">Ваш комментарий</span>
+                                    </label>
+                        
+                                    <button class="button button--primary" type="submit">Отправить</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="two-columns__small">
+                    <div class="articles-list">
+                        <div class="article-card">
+                            <div class="article-card__image"><img src="images/content/articles/img_1.jpg" srcset="images/content/articles/img_1@2x.jpg 2x" alt=""></div>
+
+                            <p class="article-card__title"><a href="#">Что такое RTP и как его читать</a></p>
+
+                            <p class="article-card__preview-text">Объясняем, что означает RTP, почему это теоретический показатель и как использовать его при выборе игр.</p>
+
+                            <div class="article-card__bottom">
+                                <p class="article-card__bottom-item">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#likes_icon" />
+                                    </svg>
+                                    10 364
+                                </p>
+
+                                <p class="article-card__bottom-item">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#clock_icon" />
+                                    </svg>
+                                    20 мин.
+                                </p>
+
+                                <p class="badge badge--type_1">Провайдеры и слоты</p>
+                            </div>
+                        </div>
+
+                        <div class="article-card">
+                            <div class="article-card__image"><img src="images/content/articles/img_2.jpg" srcset="images/content/articles/img_2@2x.jpg 2x" alt=""></div>
+
+                            <p class="article-card__title"><a href="#">Волатильность в слотах: чем отличается высокая от низкой</a></p>
+
+                            <p class="article-card__preview-text">Разбираем, как волатильность влияет на частоту выигрышей, размер выплат и стиль игры.</p>
+
+                            <div class="article-card__bottom">
+                                <p class="article-card__bottom-item">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#likes_icon" />
+                                    </svg>
+                                    1064
+                                </p>
+
+                                <p class="article-card__bottom-item">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#clock_icon" />
+                                    </svg>
+                                    7 мин.
+                                </p>
+
+                                <p class="badge badge--type_1">Провайдеры и слоты</p>
+                            </div>
+                        </div>
+
+                        <div class="article-card">
+                            <div class="article-card__image"><img src="images/content/articles/img_3.jpg" srcset="images/content/articles/img_3@2x.jpg 2x" alt=""></div>
+
+                            <p class="article-card__title"><a href="#">Почему одинаковые слоты ведут себя по-разному и от чего это на самом деле зависит</a></p>
+
+                            <p class="article-card__preview-text">Рассказываем о случайности, игровых сессиях и распространённых мифах, которые мешают трезво оценивать результат.</p>
+
+                            <div class="article-card__bottom">
+                                <p class="article-card__bottom-item">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#likes_icon" />
+                                    </svg>
+                                    164
+                                </p>
+
+                                <p class="article-card__bottom-item">
+                                    <svg aria-hidden="true">
+                                        <use xlink:href="images/sprite.svg#clock_icon" />
+                                    </svg>
+                                    20 мин.
+                                </p>
+
+                                <p class="badge badge--type_1">Провайдеры и слоты</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="page-bottom">
+                <div class="banner banner--200"><a href="#"><img src="images/content/banners/banner_200.jpg" srcset="images/content/banners/banner_200@2x.jpg 2x" alt=""></a></div>
+
+                <div class="title-block">
+                    <p class="h2">Другие новости</p>
+
+                    <a class="button button--secondary" href="#">Читать больше новостей</a>
+                </div>
+
+                <div class="articles-list">
+                    <div class="article-card">
+                        <div class="article-card__image"><img src="images/content/articles/img_1.jpg" srcset="images/content/articles/img_1@2x.jpg 2x" alt=""></div>
+
+                        <p class="article-card__title"><a href="#">Что такое RTP и как его читать</a></p>
+
+                        <p class="article-card__preview-text">Объясняем, что означает RTP, почему это теоретический показатель и как использовать его при выборе игр.</p>
+
+                        <div class="article-card__bottom">
+                            <p class="article-card__bottom-item">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#likes_icon" />
+                                </svg>
+                                10 364
+                            </p>
+
+                            <p class="article-card__bottom-item">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clock_icon" />
+                                </svg>
+                                20 мин.
+                            </p>
+
+                            <p class="badge badge--type_1">Провайдеры и слоты</p>
+                        </div>
+                    </div>
+
+                    <div class="article-card">
+                        <div class="article-card__image"><img src="images/content/articles/img_2.jpg" srcset="images/content/articles/img_2@2x.jpg 2x" alt=""></div>
+
+                        <p class="article-card__title"><a href="#">Волатильность в слотах: чем отличается высокая от низкой</a></p>
+
+                        <p class="article-card__preview-text">Разбираем, как волатильность влияет на частоту выигрышей, размер выплат и стиль игры.</p>
+
+                        <div class="article-card__bottom">
+                            <p class="article-card__bottom-item">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#likes_icon" />
+                                </svg>
+                                1064
+                            </p>
+
+                            <p class="article-card__bottom-item">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clock_icon" />
+                                </svg>
+                                7 мин.
+                            </p>
+
+                            <p class="badge badge--type_1">Провайдеры и слоты</p>
+                        </div>
+                    </div>
+
+                    <div class="article-card">
+                        <div class="article-card__image"><img src="images/content/articles/img_3.jpg" srcset="images/content/articles/img_3@2x.jpg 2x" alt=""></div>
+
+                        <p class="article-card__title"><a href="#">Почему одинаковые слоты ведут себя по-разному и от чего это на самом деле зависит</a></p>
+
+                        <p class="article-card__preview-text">Рассказываем о случайности, игровых сессиях и распространённых мифах, которые мешают трезво оценивать результат.</p>
+
+                        <div class="article-card__bottom">
+                            <p class="article-card__bottom-item">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#likes_icon" />
+                                </svg>
+                                164
+                            </p>
+
+                            <p class="article-card__bottom-item">
+                                <svg aria-hidden="true">
+                                    <use xlink:href="images/sprite.svg#clock_icon" />
+                                </svg>
+                                20 мин.
+                            </p>
+
+                            <p class="badge badge--type_1">Провайдеры и слоты</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__top">
+                <div class="footer__top-left">
+                    <div class="footer__logo"><img src="images/logo.svg" alt="Азартика"></div>
+    
+                    <p>Информационный портал об онлайн слотах, провайдерах игр и индустрии iGaming. Не является оператором азартных игр.</p>
+    
+                    <p>Контент для лиц 18+.</p>
+                </div>
+    
+                <ul class="footer-menu">
+                    <li class="footer-menu__title"><a class="footer-menu__link" href="#">Слоты</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Популярные</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Новинки</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">С джекпотом</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Megaways</a></li>
+                </ul>
+    
+                <ul class="footer-menu">
+                    <li class="footer-menu__title"><a class="footer-menu__link" href="#">Провайдеры</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Топ провайдров</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Обзоры</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Рейтинги</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Лицензии</a></li>
+                </ul>
+    
+                <ul class="footer-menu">
+                    <li class="footer-menu__title"><a class="footer-menu__link" href="#">Сообщество</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Стримеры</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Новости</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Статьи</a></li>
+                </ul>
+    
+                <ul class="footer-menu">
+                    <li class="footer-menu__title"><a class="footer-menu__link" href="#">Помощь</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Гайды</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">FAQ</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Контакты</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer__bottom">
+                <ul class="footer-menu">
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Политика конфиденциальности</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Политика обработки персональных данных</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Политика использования файлов cookie</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Предупреждение о рисках</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">О проекте</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Карта сайта</a></li>
+                </ul>
+    
+                <div class="footer__bottom-left">
+                    <p>Внимание: Азартные игры могут вызывать зависимость.<br> Играйте ответственно.<br> Контент предназначен для лиц старше 18 лет.</p>
+                    <p>Информация на сайте носит ознакомительный характер.</p>
+                </div>
+    
+                <div class="footer__bottom-right">
+                    <p>© 2026 Азартика. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    
+    <!--<script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/inputmask-init.js"></script>
+    
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/fancybox-defaults.js"></script>-->
+    
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/select2-addon.js"></script>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <title>Азартика</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=yes">
+    <meta name="format-detection" content="telephone=no">
+
+    <link rel="icon" type="image/png" href="images/favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="Azartica" />
+    <link rel="manifest" href="images/favicon/site.webmanifest" />
+
+    <link rel="preload" href="fonts/subset-Inter-Light.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Inter-Medium.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="fonts/subset-Inter-Bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css_plugins/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css_plugins/select2.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body class="page page--main">
+    <div class="header-note">
+        <p class="header-note__inner container">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#info_icon" />
+            </svg>
+            Контент для лиц 18+ <span>|</span> Информационно-познавательный портал об азартных играх
+        </p>
+    </div>
+    
+    <div class="header-block">
+        <header class="header compensate-for-scrollbar">
+            <div class="header__inner container">
+                <a class="header__logo" href="#">
+                    <picture>
+                        <source srcset="images/logo.svg" media="(min-width: 768px)">
+                        <img src="images/logo_small.svg" alt="Азартика">
+                    </picture>
+                </a>
+    
+                <nav class="main-menu">
+                    <ul class="main-menu__list">
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Провайдеры</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Слоты</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Стримеры</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Новости</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Статьи</a>
+                        </li>
+                        <li class="main-menu__item">
+                            <a class="main-menu__link" href="#">Игры</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <div class="search-form">
+                    <form class="search-form__form" action="">
+                        <input class="search-form__input" type="text" name="q" value="" placeholder="Поиск">
+                        <button class="search-form__submit" type="submit" title="Искать">
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#search_icon" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+    
+                <button class="js-search-toggler header__search-toggler" type="button" title="Поиск">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#search_icon" />
+                    </svg>
+                </button>
+    
+                <button class="js-main-menu-toggler header__menu-toggler" type="button" title="Меню">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#burger_icon" />
+                    </svg>
+                </button>
+            </div>
+        </header>
+    </div>
+
+    <main class="page__content">
+        <div class="container">
+
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item">
+                    <a class="breadcrumbs__link" href="#" title="На главную">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#home_icon" />
+                        </svg>
+                        <span class="sr-only">Главная</span>
+                    </a>
+                </li>
+                <li class="breadcrumbs__item">Слоты</li>
+            </ul>
+
+            <div class="two-columns">
+                <div class="two-columns__big">
+                    <div class="slots-description">
+                        <div class="text-container text-container--small">
+                            <h1>Все cлоты</h1>
+
+                            <p>Самый полный каталог игровых автоматов. Сравнивайте RTP, изучайте волатильность и выбирайте лучшие бонусы для старта.</p>
+                        </div>
+
+                        <div class="slots-description__features">
+                            <p class="slots-description__feature">
+                                <b class="slots-description__feature-title slots-description__feature-title--type_1">4200+</b> <span>Слотов в базе</span>
+                            </p>
+
+                            <p class="slots-description__feature">
+                                <b class="slots-description__feature-title slots-description__feature-title--type_2">98,6%</b> <span>Макс. RTP</span>
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <h2>Рекомендуемые слоты</h2>
+
+                    <div class="responsive-table top-table">
+                        <table class="">
+                            <tr>
+                                <th>#</th>
+                                <th width="52"></th>
+                                <th>Игра / Провайдер</th>
+                                <th>Характеристики</th>
+                                <th>Особенность</th>
+                                <th width="182"></th>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td><img class="logo" src="images/content/slots/logo.jpg" srcset="images/content/slots/logo.jpg 2x" alt="Gates of Olympus"></td>
+                                <td>
+                                    <p class="title">Gates of Olympus</p>
+                                    <p class="description">Pragmatic Play</p>
+                                </td>
+                                <td>
+                                    <p class="prop">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#rtp_icon" />
+                                        </svg>
+                                        RTP: 96.50%
+                                    </p>
+                                    <p class="description">Vol: Very High</p>
+                                </td>
+                                <td>
+                                    Multiplier 500x
+                                </td>
+                                <td><a class="button button--primary" href="#">Играть в демо</a></td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td><img class="logo" src="images/content/slots/logo.jpg" srcset="images/content/slots/logo.jpg 2x" alt="Sweet Bonanza"></td>
+                                <td>
+                                    <p class="title">Sweet Bonanza</p>
+                                    <p class="description">Pragmatic Play</p>
+                                </td>
+                                <td>
+                                    <p class="prop">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#rtp_icon" />
+                                        </svg>
+                                        RTP: 96.48%
+                                    </p>
+                                    <p class="description">Vol: Medium</p>
+                                </td>
+                                <td>
+                                    Buy Feature
+                                </td>
+                                <td><a class="button button--primary" href="#">Играть в демо</a></td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td><img class="logo" src="images/content/slots/logo.jpg" srcset="images/content/slots/logo.jpg 2x" alt="Book of Dead"></td>
+                                <td>
+                                    <p class="title">Book of Dead</p>
+                                    <p class="description">Play'n GO</p>
+                                </td>
+                                <td>
+                                    <p class="prop">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#rtp_icon" />
+                                        </svg>
+                                        RTP: 96.21%
+                                    </p>
+                                    <p class="description">Vol: High</p>
+                                </td>
+                                <td>
+                                    Free Spins
+                                </td>
+                                <td><a class="button button--primary" href="#">Играть в демо</a></td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td><img class="logo" src="images/content/slots/logo.jpg" srcset="images/content/slots/logo.jpg 2x" alt="Razor Shark"></td>
+                                <td>
+                                    <p class="title">Razor Shark</p>
+                                    <p class="description">Push Gaming</p>
+                                </td>
+                                <td>
+                                    <p class="prop">
+                                        <svg aria-hidden="true">
+                                            <use xlink:href="images/sprite.svg#rtp_icon" />
+                                        </svg>
+                                        RTP: 96.70%
+                                    </p>
+                                    <p class="description">Vol: High</p>
+                                </td>
+                                <td>
+                                    Mystery Stacks
+                                </td>
+                                <td><a class="button button--primary" href="#">Играть в демо</a></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="two-columns__small">
+                    <div class="banner">
+                        <a href="#">
+                            <picture>
+                                <source srcset="images/content/banners/banner_right.jpg, images/content/banners/banner_right@2x.jpg 2x" media="(min-width: 1024px)">
+                                <img src="images/content/banners/banner_200.jpg" srcset="images/content/banners/banner_200@2x.jpg 2x" alt="">
+                            </picture>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <h2>Фильтры</h2>
+
+            <div class="sorting-block">
+                <div class="tags">
+                    <a class="tag is-active" href="#">Все</a>
+                    <a class="tag" href="#">Pragmatic Play</a>
+                    <a class="tag" href="#">NetEnt</a>
+                    <a class="tag" href="#">Play'n GO</a>
+                    <a class="tag" href="#">Relax Gaming</a>
+                    <a class="tag" href="#">Endorphinia</a>
+                    <a class="tag" href="#">Nolimit City</a>
+                    <a class="tag" href="#">Megaways</a>
+                    <a class="tag" href="#">Buy Bonus</a>
+                    <a class="tag" href="#">Jackpots</a>
+                    <a class="tag" href="#">Cluster Pay</a>
+                    <a class="tag" href="#">Hold & Win</a>
+                    <a class="tag" href="#">Fruits</a>
+                    <a class="tag" href="#">Egypt</a>
+                </div>
+            </div>
+
+            <div class="slots-list">
+                <div class="slot-card">
+                    <div class="slot-card__provider-block">
+                        <p class="slot-card__provider">BIGAMES</p>
+                        <p class="slot-card__rtp">RTP: 96,5%</p>
+                    </div>
+                    <p class="slot-card__title"><a href="#">Hot Hot Fruit</a></p>
+                    <div class="slot-card__image"><img src="images/content/slots/img_1.jpg" srcset="images/content/slots/img_1@2x.jpg 2x" alt="Hot Hot Fruit"></div>
+                    <div class="slot-card__more-block">
+                        <span class="slot-card__more">Подробнее</span>
+                    </div>
+                </div>
+
+                <div class="slot-card">
+                    <div class="slot-card__provider-block">
+                        <p class="slot-card__provider">BIGAMES</p>
+                        <p class="slot-card__rtp">RTP: 96,8%</p>
+                    </div>
+                    <p class="slot-card__title"><a href="#">Mystic Fortune Deluxe Super Win</a></p>
+                    <div class="slot-card__image"><img src="images/content/slots/img_2.jpg" srcset="images/content/slots/img_2@2x.jpg 2x" alt="Hot Hot Fruit"></div>
+                    <div class="slot-card__more-block">
+                        <span class="slot-card__more">Подробнее</span>
+                    </div>
+                </div>
+
+                <div class="slot-card">
+                    <div class="slot-card__provider-block">
+                        <p class="slot-card__provider">scribe</p>
+                        <p class="slot-card__rtp">RTP: 97,2%</p>
+                    </div>
+                    <p class="slot-card__title"><a href="#">4 Pots of Egypt</a></p>
+                    <div class="slot-card__image"><img src="images/content/slots/img_3.jpg" srcset="images/content/slots/img_3@2x.jpg 2x" alt="Hot Hot Fruit"></div>
+                    <div class="slot-card__more-block">
+                        <span class="slot-card__more">Подробнее</span>
+                    </div>
+                </div>
+
+                <div class="slot-card">
+                    <div class="slot-card__provider-block">
+                        <p class="slot-card__provider">mascot</p>
+                        <p class="slot-card__rtp">RTP: 98,6%</p>
+                    </div>
+                    <p class="slot-card__title"><a href="#">Bass Boss</a></p>
+                    <div class="slot-card__image"><img src="images/content/slots/img_4.jpg" srcset="images/content/slots/img_4@2x.jpg 2x" alt="Hot Hot Fruit"></div>
+                    <div class="slot-card__more-block">
+                        <span class="slot-card__more">Подробнее</span>
+                    </div>
+                </div>
+
+                <div class="slot-card">
+                    <div class="slot-card__provider-block">
+                        <p class="slot-card__provider">BIGAMES</p>
+                        <p class="slot-card__rtp">RTP: 96,5%</p>
+                    </div>
+                    <p class="slot-card__title"><a href="#">Hot Hot Fruit</a></p>
+                    <div class="slot-card__image"><img src="images/content/slots/img_1.jpg" srcset="images/content/slots/img_1@2x.jpg 2x" alt="Hot Hot Fruit"></div>
+                    <div class="slot-card__more-block">
+                        <span class="slot-card__more">Подробнее</span>
+                    </div>
+                </div>
+
+                <div class="slot-card">
+                    <div class="slot-card__provider-block">
+                        <p class="slot-card__provider">BIGAMES</p>
+                        <p class="slot-card__rtp">RTP: 96,8%</p>
+                    </div>
+                    <p class="slot-card__title"><a href="#">Mystic Fortune Deluxe Super Win</a></p>
+                    <div class="slot-card__image"><img src="images/content/slots/img_2.jpg" srcset="images/content/slots/img_2@2x.jpg 2x" alt="Hot Hot Fruit"></div>
+                    <div class="slot-card__more-block">
+                        <span class="slot-card__more">Подробнее</span>
+                    </div>
+                </div>
+
+                <div class="slot-card">
+                    <div class="slot-card__provider-block">
+                        <p class="slot-card__provider">scribe</p>
+                        <p class="slot-card__rtp">RTP: 97,2%</p>
+                    </div>
+                    <p class="slot-card__title"><a href="#">4 Pots of Egypt</a></p>
+                    <div class="slot-card__image"><img src="images/content/slots/img_3.jpg" srcset="images/content/slots/img_3@2x.jpg 2x" alt="Hot Hot Fruit"></div>
+                    <div class="slot-card__more-block">
+                        <span class="slot-card__more">Подробнее</span>
+                    </div>
+                </div>
+
+                <div class="slot-card">
+                    <div class="slot-card__provider-block">
+                        <p class="slot-card__provider">mascot</p>
+                        <p class="slot-card__rtp">RTP: 98,6%</p>
+                    </div>
+                    <p class="slot-card__title"><a href="#">Bass Boss</a></p>
+                    <div class="slot-card__image"><img src="images/content/slots/img_4.jpg" srcset="images/content/slots/img_4@2x.jpg 2x" alt="Hot Hot Fruit"></div>
+                    <div class="slot-card__more-block">
+                        <span class="slot-card__more">Подробнее</span>
+                    </div>
+                </div>
+
+                <div class="slot-card">
+                    <div class="slot-card__provider-block">
+                        <p class="slot-card__provider">BIGAMES</p>
+                        <p class="slot-card__rtp">RTP: 96,5%</p>
+                    </div>
+                    <p class="slot-card__title"><a href="#">Hot Hot Fruit</a></p>
+                    <div class="slot-card__image"><img src="images/content/slots/img_1.jpg" srcset="images/content/slots/img_1@2x.jpg 2x" alt="Hot Hot Fruit"></div>
+                    <div class="slot-card__more-block">
+                        <span class="slot-card__more">Подробнее</span>
+                    </div>
+                </div>
+
+                <div class="slot-card">
+                    <div class="slot-card__provider-block">
+                        <p class="slot-card__provider">BIGAMES</p>
+                        <p class="slot-card__rtp">RTP: 96,8%</p>
+                    </div>
+                    <p class="slot-card__title"><a href="#">Mystic Fortune Deluxe Super Win</a></p>
+                    <div class="slot-card__image"><img src="images/content/slots/img_2.jpg" srcset="images/content/slots/img_2@2x.jpg 2x" alt="Hot Hot Fruit"></div>
+                    <div class="slot-card__more-block">
+                        <span class="slot-card__more">Подробнее</span>
+                    </div>
+                </div>
+
+                <div class="slot-card">
+                    <div class="slot-card__provider-block">
+                        <p class="slot-card__provider">scribe</p>
+                        <p class="slot-card__rtp">RTP: 97,2%</p>
+                    </div>
+                    <p class="slot-card__title"><a href="#">4 Pots of Egypt</a></p>
+                    <div class="slot-card__image"><img src="images/content/slots/img_3.jpg" srcset="images/content/slots/img_3@2x.jpg 2x" alt="Hot Hot Fruit"></div>
+                    <div class="slot-card__more-block">
+                        <span class="slot-card__more">Подробнее</span>
+                    </div>
+                </div>
+
+                <div class="slot-card">
+                    <div class="slot-card__provider-block">
+                        <p class="slot-card__provider">mascot</p>
+                        <p class="slot-card__rtp">RTP: 98,6%</p>
+                    </div>
+                    <p class="slot-card__title"><a href="#">Bass Boss</a></p>
+                    <div class="slot-card__image"><img src="images/content/slots/img_4.jpg" srcset="images/content/slots/img_4@2x.jpg 2x" alt="Hot Hot Fruit"></div>
+                    <div class="slot-card__more-block">
+                        <span class="slot-card__more">Подробнее</span>
+                    </div>
+                </div>
+
+                <div class="slot-card">
+                    <div class="slot-card__provider-block">
+                        <p class="slot-card__provider">BIGAMES</p>
+                        <p class="slot-card__rtp">RTP: 96,5%</p>
+                    </div>
+                    <p class="slot-card__title"><a href="#">Hot Hot Fruit</a></p>
+                    <div class="slot-card__image"><img src="images/content/slots/img_1.jpg" srcset="images/content/slots/img_1@2x.jpg 2x" alt="Hot Hot Fruit"></div>
+                    <div class="slot-card__more-block">
+                        <span class="slot-card__more">Подробнее</span>
+                    </div>
+                </div>
+
+                <div class="slot-card">
+                    <div class="slot-card__provider-block">
+                        <p class="slot-card__provider">BIGAMES</p>
+                        <p class="slot-card__rtp">RTP: 96,8%</p>
+                    </div>
+                    <p class="slot-card__title"><a href="#">Mystic Fortune Deluxe Super Win</a></p>
+                    <div class="slot-card__image"><img src="images/content/slots/img_2.jpg" srcset="images/content/slots/img_2@2x.jpg 2x" alt="Hot Hot Fruit"></div>
+                    <div class="slot-card__more-block">
+                        <span class="slot-card__more">Подробнее</span>
+                    </div>
+                </div>
+
+                <div class="slot-card">
+                    <div class="slot-card__provider-block">
+                        <p class="slot-card__provider">scribe</p>
+                        <p class="slot-card__rtp">RTP: 97,2%</p>
+                    </div>
+                    <p class="slot-card__title"><a href="#">4 Pots of Egypt</a></p>
+                    <div class="slot-card__image"><img src="images/content/slots/img_3.jpg" srcset="images/content/slots/img_3@2x.jpg 2x" alt="Hot Hot Fruit"></div>
+                    <div class="slot-card__more-block">
+                        <span class="slot-card__more">Подробнее</span>
+                    </div>
+                </div>
+
+                <div class="slot-card">
+                    <div class="slot-card__provider-block">
+                        <p class="slot-card__provider">mascot</p>
+                        <p class="slot-card__rtp">RTP: 98,6%</p>
+                    </div>
+                    <p class="slot-card__title"><a href="#">Bass Boss</a></p>
+                    <div class="slot-card__image"><img src="images/content/slots/img_4.jpg" srcset="images/content/slots/img_4@2x.jpg 2x" alt="Hot Hot Fruit"></div>
+                    <div class="slot-card__more-block">
+                        <span class="slot-card__more">Подробнее</span>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="pager">
+                <li class="pager__item">
+                    <span class="pager__link">
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#arrow_left" />
+                        </svg>
+                        Назад
+                    </span>
+                </li>
+                <li class="pager__item">
+                    <a class="pager__link is-active" href="#">1</a>
+                </li>
+                <li class="pager__item">
+                    <a class="pager__link" href="#">2</a>
+                </li>
+                <li class="pager__item">
+                    <a class="pager__link" href="#">3</a>
+                </li>
+                <li class="pager__item">
+                    <a class="pager__link" href="#">...</a>
+                </li>
+                <li class="pager__item">
+                    <a class="pager__link" href="#">67</a>
+                </li>
+                <li class="pager__item">
+                    <a class="pager__link" href="#">68</a>
+                </li>
+                <li class="pager__item">
+                    <a class="pager__link" href="#">
+                        Вперед
+                        <svg aria-hidden="true">
+                            <use xlink:href="images/sprite.svg#arrow_right" />
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="page-bottom">
+                <div class="text-container">
+                    <h2>Как выбрать лучший слот?</h2>
+
+                    <p>Выбор игрового автомата — это не только вопрос удачи, но и понимания механики. Мы собрали для вас полную базу слотов, где каждый аппарат имеет подробное описание. Обращайте внимание на RTP (Return to Player) — теоретический
+                        процент возврата средств. Чем выше этот показатель, тем больше шансов на длительную игру.</p>
+
+                    <p>Ещё один важный параметр — волатильность. Высокая волатильность (как в слотах от Pragmatic Play или Nolimit City) означает редкие, но крупные выигрыши. Низкая волатильность (NetEnt, классические слоты) подойдёт тем,
+                        кто предпочитает частые, но небольшие выплаты. Используйте наши фильтры ниже, чтобы найти идеальную игру под свой стиль.</p>
+                </div>
+
+                <div class="banner banner--200"><a href="#"><img src="images/content/banners/banner_200.jpg" srcset="images/content/banners/banner_200@2x.jpg 2x" alt=""></a></div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__inner container">
+            <div class="footer__top">
+                <div class="footer__top-left">
+                    <div class="footer__logo"><img src="images/logo.svg" alt="Азартика"></div>
+    
+                    <p>Информационный портал об онлайн слотах, провайдерах игр и индустрии iGaming. Не является оператором азартных игр.</p>
+    
+                    <p>Контент для лиц 18+.</p>
+                </div>
+    
+                <ul class="footer-menu">
+                    <li class="footer-menu__title"><a class="footer-menu__link" href="#">Слоты</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Популярные</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Новинки</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">С джекпотом</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Megaways</a></li>
+                </ul>
+    
+                <ul class="footer-menu">
+                    <li class="footer-menu__title"><a class="footer-menu__link" href="#">Провайдеры</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Топ провайдров</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Обзоры</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Рейтинги</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Лицензии</a></li>
+                </ul>
+    
+                <ul class="footer-menu">
+                    <li class="footer-menu__title"><a class="footer-menu__link" href="#">Сообщество</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Стримеры</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Новости</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Статьи</a></li>
+                </ul>
+    
+                <ul class="footer-menu">
+                    <li class="footer-menu__title"><a class="footer-menu__link" href="#">Помощь</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Гайды</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">FAQ</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Контакты</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer__bottom">
+                <ul class="footer-menu">
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Политика конфиденциальности</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Политика обработки персональных данных</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Политика использования файлов cookie</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Предупреждение о рисках</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">О проекте</a></li>
+                    <li class="footer-menu__item"><a class="footer-menu__link" href="#">Карта сайта</a></li>
+                </ul>
+    
+                <div class="footer__bottom-left">
+                    <p>Внимание: Азартные игры могут вызывать зависимость.<br> Играйте ответственно.<br> Контент предназначен для лиц старше 18 лет.</p>
+                    <p>Информация на сайте носит ознакомительный характер.</p>
+                </div>
+    
+                <div class="footer__bottom-right">
+                    <p>© 2026 Азартика. Все права защищены.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    
+    <script src="js/swiper-bundle.min.js"></script>
+    
+    <!--<script src="js/jquery.inputmask.min.js"></script>
+    <script src="js/inputmask-init.js"></script>
+    
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/fancybox-defaults.js"></script>-->
+    
+    <script src="js/select2.full.min.js"></script>
+    <script src="js/select2-addon.js"></script>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>

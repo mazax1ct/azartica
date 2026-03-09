@@ -1,0 +1,32 @@
+.short-news-list {
+    &:not(:last-child) {
+        margin-bottom: var(--gap);
+    }
+
+    .button {
+        background-color: transparent;
+        width: 100%;
+    }
+}
+
+.short-news {
+    &:not(:last-child) {
+        margin-bottom: var(--gap);
+    }
+
+    &__date {
+        color: var(--grey);
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    &__title {
+        a {
+            color: var(--black);
+            text-decoration: none;
+            @include hover {
+                color: var(--accent);
+            }
+        }
+    }
+}

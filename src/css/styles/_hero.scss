@@ -24,5 +24,9 @@
         display: flex;
         gap: var(--gap);
         margin-top: 30px;
+
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
     }
 }

@@ -14,7 +14,7 @@ html {
 
 html {
     scroll-behavior: smooth;
-    scroll-padding-top: 150px;
+    scroll-padding-top: calc(var(--header_min_height) + 20px);
 
     &.is-overflow {
         scrollbar-gutter: stable;
@@ -44,13 +44,13 @@ html {
     &__content {
         flex: 1 0 auto;
         overflow: hidden;
-        padding-bottom: clamp(var(--section_indent_min), 5.2125vw, var(--section_indent_max));
+        padding-bottom: clamp(var(--section_indent_min), 5.25vw, var(--section_indent_max));
     }
 }
 
 .section {
-    padding-top: clamp(var(--section_indent_min), 4.25vw, var(--section_indent_max));
-    padding-bottom: clamp(var(--section_indent_min), 5.2125vw, var(--section_indent_max));
+    padding-top: clamp(var(--section_indent_min), 5.25vw, var(--section_indent_max));
+    padding-bottom: clamp(var(--section_indent_min), 5.25vw, var(--section_indent_max));
 
     &--white {
         background-color: var(--white);
@@ -140,6 +140,44 @@ html {
                 height: 200px;
             }
         }
+
+        .h2,
+        .h3 {
+            margin-top: 0;
+
+            &:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+
+        .articles-list {
+            @media(min-width: $md) {
+                flex-direction: column;
+            }
+
+            .article-card {
+                @media(min-width: $md) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &__section {
+        border-radius: var(--border_radius_default);
+        background-color: var(--white);
+        padding: 40px var(--container_padding) clamp(40px, 5.25vw, 80px);
+        @media(min-width: $hd) {
+            padding-right: clamp(40px, 5.25vw, 80px);
+        }
+        @media(max-width: $md - 0.02px) {
+            margin-left: calc(0.01px - var(--container_padding));
+            margin-right: calc(0.01px - var(--container_padding));
+        }
+
+        &:not(:last-child) {
+            margin-bottom: clamp(var(--section_indent_min), 5.25vw, var(--section_indent_max));
+        }
     }
 }
 
@@ -152,9 +190,11 @@ html {
 }
 
 .page-bottom {
-    display: flex;
-    flex-direction: column;
-    gap: clamp(var(--section_indent_min), 4.25vw, var(--section_indent_max));
+    .text-container {
+        &:not(:last-child) {
+            margin-bottom: clamp(var(--section_indent_min), 5.25vw, var(--section_indent_max));
+        }
+    }
 }
 
 .h1,
@@ -180,6 +220,12 @@ h1 {
     font-size: clamp(24px, 3vw, 42px);
     margin-bottom: 20px;
     margin-top: 0;
+}
+
+h1 {
+    &.h2 {
+        margin-top: 0;
+    }
 }
 
 .h2,
@@ -249,7 +295,7 @@ ul {
 
     &:not([class]) {
         margin-top: 0;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
 
         &:last-child {
             margin-bottom: 0;
@@ -257,12 +303,12 @@ ul {
 
         li {
             &:not(:last-child) {
-                margin-bottom: 10px;
+                margin-bottom: 16px;
             }
 
             ol,
             ul {
-                margin-top: 10px;
+                margin-top: 16px;
             }
 
             ol {
@@ -277,7 +323,8 @@ ol {
 
     li {
         &::marker {
-            color: inherit;
+            color: var(--accent);
+            font-weight: 500;
         }
     }
 }
@@ -292,14 +339,14 @@ ul {
             z-index: 1;
 
             &::before {
-                background-color: var(--black);
+                background-color: var(--accent);
                 border-radius: 50%;
                 content: '';
-                height: 3px;
-                left: 10px;
+                height: 8px;
+                left: 0;
                 position: absolute;
-                top: 0.68em;
-                width: 3px;
+                top: 0.48em;
+                width: 8px;
                 z-index: 1;
             }
         }
@@ -339,6 +386,34 @@ blockquote {
     &:last-child {
         margin-bottom: 0;
     }
+}
+
+figure {
+    margin: 30px 0;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    img {
+        border-radius: var(--border_radius_default);
+        display: block;
+        width: 100%;
+    }
+}
+
+figcaption {
+    color: var(--grey_dark);
+    font-size: clamp(12px, 3vw, 15px);
+    font-style: italic;
+    margin-top: 16px;
+    padding-left: var(--container_padding);
+    padding-right: var(--container_padding);
+    text-align: center;
 }
 
 .responsive-table {

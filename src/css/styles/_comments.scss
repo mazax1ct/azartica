@@ -1,0 +1,170 @@
+.comments {
+    max-width: 730px;
+
+    &__form {
+        &:not(:last-child) {
+            margin-bottom: var(--section_indent_min);
+        }
+
+        .button {
+            margin-top: 8px;
+        }
+    }
+
+    &__form-inputs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+
+        .input-group {
+            margin: 0;
+            width: 100%;
+            @media(min-width: 600px) {
+                width: calc(100% / 2 - 16px / 2);
+            }
+        }
+    }
+
+    &__title-block {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px var(--gap);
+        justify-content: space-between;
+
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+
+        .sorting-select .select-wrapper {
+            width: 150px;
+        }
+    }
+
+    &__title {
+        font-size: clamp(18px, 3vw, 24px);
+        font-weight: 700;
+        margin: 0;
+    }
+}
+
+.comment {
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    &--answer {
+        @media(min-width: $sm) {
+            padding-left: clamp(10px, 3vw, 30px);
+        }
+    }
+
+    &--answer_answer {
+        @media(min-width: $sm) {
+            padding-left: clamp(10px, 5vw, 60px);
+        }
+    }
+
+    &__author {
+        align-items: center;
+        display: flex;
+        gap: 8px;
+        margin-bottom: 16px;
+    }
+
+    &__author-avatar {
+        border-radius: 50%;
+        display: block;
+        height: 40px;
+        min-width: 40px;
+        object-fit: cover;
+        object-position: center;
+        width: 40px;
+    }
+
+    &__author-name {
+        font-weight: 700;
+        margin: 0;
+    }
+
+    &__date {
+        color: var(--grey);
+    }
+
+    &__text {
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &__controls {
+        display: flex;
+        gap: 16px;
+        flex-wrap: wrap;
+
+        &:not(:last-child) {
+            margin-bottom: 40px;
+        }
+    }
+
+    &__answer-button {
+        @include active-area;
+        @include button-reset;
+        color: var(--grey_dark);
+        font-weight: 300;
+        position: relative;
+        transition: color 0.3s;
+        z-index: 0;
+        @include hover {
+            color: var(--black);
+        }
+    }
+
+    &__likes {
+        align-items: center;
+        display: flex;
+        gap: 4px;
+    }
+
+    &__copy-link-button,
+    &__likes-button {
+        @include active-area;
+        @include button-reset;
+        color: var(--grey_dark);
+        height: 20px;
+        min-width: 20px;
+        position: relative;
+        transition: color 0.3s;
+        width: 20px;
+        z-index: 0;
+        @include hover {
+            color: var(--black);
+        }
+
+        svg {
+            fill: currentColor;
+            height: 20px;
+            width: 20px;
+        }
+    }
+
+    &__likes-count {
+        color: var(--grey_dark);
+
+        &.positive {
+            color: var(--green);
+        }
+
+        &.negative {
+            color: var(--accent_red);
+        }
+    }
+
+    .comments__form {
+        max-width: 550px;
+    }
+}

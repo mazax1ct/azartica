@@ -9,7 +9,7 @@
     }
 
     &:not(:last-child) {
-        margin-bottom: clamp(var(--section_indent_min), 4.25vw, var(--section_indent_max));
+        margin-bottom: clamp(var(--section_indent_min), 5.25vw, var(--section_indent_max));
     }
 }
 

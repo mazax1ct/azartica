@@ -1,0 +1,36 @@
+.slots-description {
+    align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--gap);
+
+    &__features {
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--gap);
+    }
+
+    &__feature {
+        background-color: var(--white);
+        border: 1px solid var(--accent);
+        border-radius: var(--border_radius_small);
+        color: var(--grey);
+        font-size: 15px;
+        margin: 0;
+        padding: 10px 20px;
+    }
+
+    &__feature-title {
+        display: block;
+        font-size: 32px;
+        font-weight: 700;
+
+        &--type_1 {
+            color: var(--purple);
+        }
+
+        &--type_2 {
+            color: var(--green);
+        }
+    }
+}

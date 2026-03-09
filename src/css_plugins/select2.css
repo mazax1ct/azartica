@@ -137,7 +137,9 @@
   border-bottom-right-radius: 0;
 }
 
-.select2-container--open .select2-dropdown--below {}
+.select2-container--open .select2-dropdown--below {
+  margin-top: 4px;
+}
 
 .select2-search--dropdown {
   display: block;

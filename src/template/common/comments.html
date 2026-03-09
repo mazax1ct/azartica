@@ -1,0 +1,217 @@
+<div class="comments">
+    <form class="comments__form">
+        <div class="comments__form-inputs">
+            <label class="input-group">
+                <input class="input error" type="text" name="name" value="">
+
+                <span class="input-group__label">Ваше имя <span class="required">*</span></span>
+
+                <span class="error-text">Ошибка!</span>
+            </label>
+
+            <label class="input-group">
+                <input class="input" type="text" name="email" value="">
+                <span class="input-group__label">Ваш email</span>
+            </label>
+        </div>
+
+        <label class="input-group">
+            <textarea class="textarea" name="comment">Давно смотрю его, очень нравится как с юмором ведет стримы, после работы самое оно глянуть за ужином|</textarea>
+            <span class="input-group__label">Ваш комментарий</span>
+        </label>
+
+        <button class="button button--primary" type="submit">Отправить</button>
+    </form>
+
+    <div class="comments__title-block">
+        <p class="comments__title">236 комментариев</p>
+
+        <div class="sorting-select">
+            <svg aria-hidden="true">
+                <use xlink:href="images/sprite.svg#sort_icon" />
+            </svg>
+
+            <div class="select-wrapper">
+                <select class="js-select" id="sorting">
+                    <option value="1">Старые</option>
+                    <option value="2">Новые</option>
+                    <option value="3">Популярные</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="comment__author">
+            <img class="comment__author-avatar" src="images/content/news/comment_avatar.svg" alt="">
+
+            <div>
+                <p class="comment__author-name">Никита</p>
+                <time class="comment__date" datetime="2026-01-21T10:39">21.01 в 10:39</time>
+            </div>
+        </div>
+
+        <div class="comment__text">
+            <p>Подписан давно, были и жирные заносы, и полный слив. В целом стример честный, без сказок про «стратегии, которые всегда работают». Для новичков — норм, но голову включать всё равно нужно</p>
+        </div>
+
+        <div class="comment__controls">
+            <button class="comment__answer-button" type="button">Ответить</button>
+
+            <div class="comment__likes">
+                <button class="comment__likes-button" type="button" title="Увеличить">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#plus_icon" />
+                    </svg>
+                </button>
+
+                <div class="comment__likes-count positive">6</div>
+
+                <button class="comment__likes-button" type="button" title="Уменьшить">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#minus_icon" />
+                    </svg>
+                </button>
+            </div>
+
+            <button class="comment__copy-link-button" type="button" title="Скопировать ссылку">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#link_icon" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="comment">
+        <div class="comment__author">
+            <img class="comment__author-avatar" src="images/content/news/comment_avatar.svg" alt="">
+
+            <div>
+                <p class="comment__author-name">Kisly</p>
+                <time class="comment__date" datetime="2026-01-23T13:02">23.01 в 13:02</time>
+            </div>
+        </div>
+
+        <div class="comment__text">
+            <p>Смотрю в основном ради слотов, которые он показывает. Иногда реально попадаются интересные варианты, про которые раньше не слышал.</p>
+            <p>А кто знает, он реально играет на свои или это демо?</p>
+        </div>
+
+        <div class="comment__controls">
+            <button class="comment__answer-button" type="button">Ответить</button>
+
+            <div class="comment__likes">
+                <button class="comment__likes-button" type="button" title="Увеличить">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#plus_icon" />
+                    </svg>
+                </button>
+
+                <div class="comment__likes-count positive">20</div>
+
+                <button class="comment__likes-button" type="button" title="Уменьшить">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#minus_icon" />
+                    </svg>
+                </button>
+            </div>
+
+            <button class="comment__copy-link-button" type="button" title="Скопировать ссылку">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#link_icon" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="comment comment--answer">
+        <div class="comment__author">
+            <img class="comment__author-avatar" src="images/content/news/comment_avatar.svg" alt="">
+
+            <div>
+                <p class="comment__author-name">Sheharhoret</p>
+                <time class="comment__date" datetime="2026-01-23T13:12">23.01 в 13:12</time>
+            </div>
+        </div>
+
+        <div class="comment__text">
+            <p><b>Kisly</b>, Говорил на стриме, что депозит свой, но кто его знает</p>
+        </div>
+
+        <div class="comment__controls">
+            <button class="comment__answer-button" type="button">Ответить</button>
+
+            <div class="comment__likes">
+                <button class="comment__likes-button" type="button" title="Увеличить">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#plus_icon" />
+                    </svg>
+                </button>
+
+                <div class="comment__likes-count negative">-1</div>
+
+                <button class="comment__likes-button" type="button" title="Уменьшить">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#minus_icon" />
+                    </svg>
+                </button>
+            </div>
+
+            <button class="comment__copy-link-button" type="button" title="Скопировать ссылку">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#link_icon" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="comment comment--answer_answer">
+        <div class="comment__author">
+            <img class="comment__author-avatar" src="images/content/news/comment_avatar.svg" alt="">
+
+            <div>
+                <p class="comment__author-name">Влад</p>
+                <time class="comment__date" datetime="2026-01-23T13:14">23.01 в 13:14</time>
+            </div>
+        </div>
+
+        <div class="comment__text">
+            <p><b>Sheharhoret</b>, ну да, проверить сложно, но выглядит правдоподобно.</p>
+        </div>
+
+        <div class="comment__controls">
+            <button class="comment__answer-button" type="button">Ответить</button>
+
+            <div class="comment__likes">
+                <button class="comment__likes-button" type="button" title="Увеличить">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#plus_icon" />
+                    </svg>
+                </button>
+
+                <div class="comment__likes-count">0</div>
+
+                <button class="comment__likes-button" type="button" title="Уменьшить">
+                    <svg aria-hidden="true">
+                        <use xlink:href="images/sprite.svg#minus_icon" />
+                    </svg>
+                </button>
+            </div>
+
+            <button class="comment__copy-link-button" type="button" title="Скопировать ссылку">
+                <svg aria-hidden="true">
+                    <use xlink:href="images/sprite.svg#link_icon" />
+                </svg>
+            </button>
+        </div>
+
+        <form class="comments__form">
+            <label class="input-group">
+                <textarea class="textarea" name="comment"></textarea>
+                <span class="input-group__label">Ваш комментарий</span>
+            </label>
+
+            <button class="button button--primary" type="submit">Отправить</button>
+        </form>
+    </div>
+</div>
