@@ -142,7 +142,11 @@ html {
         }
 
         .h2,
-        .h3 {
+        .h3,
+        .h4,
+        h2,
+        h3,
+        h4 {
             margin-top: 0;
 
             &:not(:last-child) {
@@ -178,6 +182,16 @@ html {
         &:not(:last-child) {
             margin-bottom: clamp(var(--section_indent_min), 5.25vw, var(--section_indent_max));
         }
+
+        .banner {
+            &:not(:first-child) {
+                margin-top: var(--section_indent_min);
+            }
+
+            &:not(:last-child) {
+                margin-bottom: var(--section_indent_min);
+            }
+        }
     }
 }
 
@@ -200,9 +214,11 @@ html {
 .h1,
 .h2,
 .h3,
+.h4,
 h1,
 h2,
-h3 {
+h3,
+h4 {
     display: block;
     font-weight: 700;
 
@@ -238,10 +254,17 @@ h3 {
     font-size: clamp(18px, 3vw, 32px);
 }
 
+.h4,
+h4 {
+    font-size: clamp(18px, 3vw, 24px);
+}
+
 .h2,
 .h3,
+.h4,
 h2,
-h3 {
+h3,
+h4 {
     margin-top: 48px;
     margin-bottom: 30px;
 }
@@ -349,6 +372,84 @@ ul {
                 width: 8px;
                 z-index: 1;
             }
+        }
+    }
+}
+
+.big-counter {
+    @include list-reset;
+    counter-reset: custom-counter;
+
+    li {
+        counter-increment: custom-counter;
+        min-height: 48px;
+        position: relative;
+        padding-left: 68px;
+        z-index: 0;
+
+        &:not(:last-child) {
+            padding-bottom: 40px;
+
+            &::after {
+                background-color: var(--accent);
+                content: '';
+                height: 100%;
+                left: 24px;
+                position: absolute;
+                top: 0;
+                width: 1px;
+                z-index: 0;
+            }
+        }
+
+        &::before {
+            align-items: center;
+            background-color: var(--accent);
+            border-radius: 8px;
+            content: counter(custom-counter);
+            color: var(--white);
+            display: flex;
+            font-size: 20px;
+            font-weight: 500;
+            height: 48px;
+            justify-content: center;
+            left: 0;
+            position: absolute;
+            padding: 5px;
+            top: 0;
+            width: 48px;
+            z-index: 1;
+        }
+
+        & > span {
+            align-items: center;
+            display: flex;
+            min-height: 48px;
+        }
+    }
+}
+
+.pros-cons {
+    @include list-reset;
+
+    li {
+        min-height: 24px;
+        padding-left: 28px;
+
+        &:not(:last-child) {
+            margin-bottom: 16px;
+        }
+    }
+
+    &--pros {
+        li {
+            background: url("../images/icons/plus_icon.svg") no-repeat 0 0;
+        }
+    }
+
+    &--cons {
+        li {
+            background: url("../images/icons/minus_icon.svg") no-repeat 0 0;
         }
     }
 }
@@ -464,6 +565,7 @@ table {
 
     td {
         background-color: var(--white);
+        vertical-align: top;
     }
 }
 

@@ -16,6 +16,18 @@
             width: calc(100% / 3 - var(--gap) / 3 * 2);
         }
     }
+
+    &--4_in_row {
+        .casino-card {
+            width: 100%;
+            @media(min-width: 600px) {
+                width: calc(100% / 2 - var(--gap) / 2);
+            }
+            @media(min-width: $hd) {
+                width: calc(100% / 4 - var(--gap) / 4 * 3);
+            }
+        }
+    }
 }
 
 .casino-card {

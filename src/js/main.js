@@ -68,6 +68,27 @@ $(document).ready(function() {
     var $p = $(this).closest('.select-wrapper');
     $p.removeClass('open');
 	});
+
+  $('.js-slider').each(function(index, el) {
+    var slider = el.children[0];
+
+    new Swiper(slider, {
+      loop: false,
+      spaceBetween: 20,
+      slidesPerView: 1,
+
+      breakpoints: {
+        1280: {
+          slidesPerView: 'auto'
+        },
+      },
+
+      pagination: {
+        el: '.js-slider-pager[data-slider="'+slider.dataset.slider+'"]',
+        clickable: true
+      }
+    });
+  });
 });
 
 $(window).on("scroll", resize_scroll).on("resize", resize_scroll);

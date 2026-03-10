@@ -1,0 +1,35 @@
+.slider {
+    &:not(:last-child) {
+        margin-bottom: var(--section_indent_min);
+    }
+
+    img {
+        border-radius: var(--border_radius_default);
+        display: block;
+        width: 100%;
+    }
+
+    .swiper-slide {
+        width: auto;
+    }
+
+    .swiper-pagination {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 20px;
+        position: static;
+
+        .swiper-pagination-bullet {
+            background-color: var(--purple_light);
+            height: 16px;
+            margin: 0;
+            opacity: 1;
+            width: 16px;
+        }
+
+        .swiper-pagination-bullet-active {
+            background-color: var(--accent);
+        }
+    }
+}

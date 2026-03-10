@@ -1,0 +1,47 @@
+.progress {
+    &:not(:last-child) {
+        margin-bottom: 40px;
+    }
+
+    &__top {
+        align-items: center;
+        display: flex;
+        font-weight: 400;
+        justify-content: space-between;
+        gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    &__container {
+        border-radius: 5px;
+        background-color: #D2D2D2;
+        height: 10px;
+        position: relative;
+        z-index: 0;
+    }
+
+    &__value {
+        border-radius: 5px;
+        background-color: var(--accent);
+        height: 10px;
+        left: 0;
+        position: absolute;
+        top: 0;
+
+        &--type_1 {
+            background-color: var(--accent_red);
+        }
+    }
+
+    &__bottom {
+        align-items: center;
+        color: var(--grey);
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+        margin-top: 10px;
+        @media(max-width: $sm - 0.02px) {
+            font-size: 12px;
+        }
+    }
+}
