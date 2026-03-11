@@ -23,6 +23,7 @@
 
     <link rel="stylesheet" href="css_plugins/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css_plugins/select2.css" />
+    <link rel="stylesheet" href="css_plugins/jquery.fancybox.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/custom.css" />
 </head>
@@ -126,7 +127,7 @@
                         <p>Отправляйтесь в межзвёздное путешествие с расширяющимися вайлдами и огромными множителями в этом космическом приключении с высокой волатильностью.</p>
 
                         <div class="slot-hero__buttons">
-                            <a class="button button--primary" href="#">Открыть демо</a>
+                            <a class="button button--primary" href="#">Играть в демо</a>
                             <a class="button button--white_bordered" href="#">Как играть</a>
                         </div>
                     </div>
@@ -239,11 +240,15 @@
                         <div class="swiper" data-slider="slider_1">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide">
-                                    <img src="images/content/slots/slide.jpg" srcset="images/content/slots/slide@2x.jpg 2x" alt="">
+                                    <a href="images/content/slots/slide@2x.jpg" data-fancybox="images">
+                                        <img src="images/content/slots/slide.jpg" srcset="images/content/slots/slide@2x.jpg 2x" alt="">
+                                    </a>
                                 </div>
 
                                 <div class="swiper-slide">
-                                    <img src="images/content/slots/slide_2.jpg" srcset="images/content/slots/slide_2@2x.jpg 2x" alt="">
+                                    <a href="images/content/slots/slide@2x.jpg" data-fancybox="images">
+                                        <img src="images/content/slots/slide_2.jpg" srcset="images/content/slots/slide_2@2x.jpg 2x" alt="">
+                                    </a>
                                 </div>
                             </div>
 
@@ -761,10 +766,7 @@
 
                     <div class="banner">
                         <a href="#">
-                            <picture>
-                                <source srcset="images/content/banners/banner_right_small.jpg, images/content/banners/banner_right_small@2x.jpg 2x" media="(min-width: 1024px)">
-                                <img src="images/content/banners/banner_200.jpg" srcset="images/content/banners/banner_200@2x.jpg 2x" alt="">
-                            </picture>
+                            <img src="images/content/banners/banner_right_small.jpg" srcset="images/content/banners/banner_right_small@2x.jpg 2x" alt="">
                         </a>
                     </div>
                 </div>
@@ -1059,16 +1061,22 @@
             </div>
         </div>
     </footer>
+    
+    <a class="js-to-top to-top" href="#" title="Наверх">
+        <svg aria-hidden="true">
+            <use xlink:href="images/sprite.svg#chevron_up" />
+        </svg>
+    </a>
 
     <script src="js/jquery-3.7.1.min.js"></script>
     
     <script src="js/swiper-bundle.min.js"></script>
     
     <!--<script src="js/jquery.inputmask.min.js"></script>
-    <script src="js/inputmask-init.js"></script>
+    <script src="js/inputmask-init.js"></script>-->
     
     <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/fancybox-defaults.js"></script>-->
+    <script src="js/fancybox-defaults.js"></script>
     
     <script src="js/select2.full.min.js"></script>
     <script src="js/select2-addon.js"></script>

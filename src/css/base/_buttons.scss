@@ -39,7 +39,7 @@
         &.disabled,
         &:disabled,
         &[data-disabled] {
-            background-color: var(--grey);
+            background-color: var(--grey_light);
             border-color: var(--grey);
             color: #737373;
         }
@@ -63,7 +63,7 @@
         &.disabled,
         &:disabled,
         &[data-disabled] {
-            background-color: var(--grey);
+            background-color: var(--grey_light);
             border-color: var(--grey);
             color: #737373;
         }
@@ -119,4 +119,11 @@
         min-width: 24px;
         width: 24px;
     }
+}
+
+.button-overflow-text {
+    max-width: calc(100% - 10px - 24px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }

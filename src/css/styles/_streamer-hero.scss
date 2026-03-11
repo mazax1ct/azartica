@@ -1,0 +1,98 @@
+.streamer-hero {
+    background-color: var(--purple);
+    color: var(--white);
+    @media(max-width: $md - 0.02px) {
+        margin-bottom: var(--section_indent_min);
+    }
+
+    & + .two-columns {
+        margin-top: var(--section_indent_min);
+    }
+
+    &__inner {
+        min-height: 465px;
+        @media(min-width: $sm) {
+            align-items: center;
+            display: flex;
+            gap: 48px;
+            flex-direction: row;
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+        @media(max-width: $sm - 0.02px) {
+            padding-top: 30px;
+        }
+    }
+
+    &__image {
+        @media(min-width: $sm) {
+            min-width: 300px;
+        }
+
+        img {
+            aspect-ratio: 1;
+            border-radius: 50%;
+            display: block;
+            max-width: 360px;
+            margin-left: auto;
+            margin-right: auto;
+            object-fit: cover;
+            object-position: center;
+            width: 100%;
+        }
+    }
+
+    &__text-block {
+        max-width: 600px;
+        @media(max-width: $sm - 0.02px) {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
+    }
+
+    &__reviews {
+        align-items: center;
+        color: var(--grey);
+        display: flex;
+        gap: 4px;
+        flex-wrap: wrap;
+        margin-bottom: 24px;
+
+        svg {
+            fill: var(--grey_light);
+            height: 24px;
+            min-width: 24px;
+            width: 24px;
+
+            &.filled {
+                fill: var(--yellow);
+            }
+        }
+    }
+
+    &__buttons {
+        display: flex;
+        gap: var(--gap);
+        margin-top: 24px;
+
+        &:not(:last-child) {
+            margin-bottom: 24px;
+        }
+
+        .button {
+            border-color: var(--accent);
+            background-color: var(--white);
+            color: var(--black);
+            @include hover {
+                background-color: var(--accent);
+                color: var(--white);
+            }
+
+            svg {
+                height: 32px;
+                min-width: 32px;
+                width: 32px;
+            }
+        }
+    }
+}

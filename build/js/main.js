@@ -1,5 +1,6 @@
 var header = $('.header'),
     header_note = $('.header-note'),
+    to_top = $('.to-top'),
     scrollPrev = 0;
 
 var resize_scroll = function(e) {
@@ -13,6 +14,12 @@ var resize_scroll = function(e) {
     if (scrolled > 0) {
   		header.addClass('is-scrolled');
   	}
+  }
+
+  if(scrolled > 0) {
+    to_top.addClass('is-active');
+  } else {
+    to_top.removeClass('is-active');
   }
 
   if (scrolled == 0) {
@@ -152,5 +159,18 @@ $(document).on('click', '.js-accordion-toggler', function () {
     $(this).removeClass('is-active');
     $(this).closest('.accordion').find('.accordion__body').slideUp();
   }
+  return false;
+});
+
+//показать всё содержание
+$(document).on('click', '.js-anchors-shower', function () {
+  $(this).prev('.article-anchors').removeClass('is-collapsed');
+  $(this).remove();
+  return false;
+});
+
+//скролл наверх страницы
+$(document).on('click', '.js-to-top', function () {
+  $('html, body').animate({ scrollTop: 0 }, 'slow');
   return false;
 });

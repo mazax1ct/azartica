@@ -10,6 +10,7 @@
     }
 
     &__inner {
+        min-height: 465px;
         @media(min-width: $sm) {
             display: flex;
             gap: var(--gap);
@@ -21,6 +22,9 @@
     &__image {
         @media(max-width: $sm - 0.02px) {
             margin-left: calc(0.01px - var(--container_padding));
+            margin-right: calc(0.01px - var(--container_padding));
+        }
+        @media(min-width: $sm) and (max-width: 1560px) {
             margin-right: calc(0.01px - var(--container_padding));
         }
 

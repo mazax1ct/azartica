@@ -1,0 +1,41 @@
+.to-top {
+    align-items: center;
+    background-color: var(--accent);
+    border-radius: 50%;
+    bottom: 40px;
+    color: var(--white);
+    display: flex;
+    height: 40px;
+    justify-content: center;
+    left: auto;
+    position: fixed;
+    right: 20px;
+    top: auto;
+    transition: background-color 0.3s, color 0.3s, opacity 0.3s;
+    width: 40px;
+    z-index: 5;
+    @media(min-width: $fhd) {
+        height: 80px;
+        width: 80px;
+    }
+    @include hover {
+        background-color: var(--purple_dark);
+        color: var(--white);
+    }
+
+    &:not(.is-active) {
+        opacity: 0;
+        pointer-events: none;
+        touch-action: none;
+    }
+
+    svg {
+        fill: currentColor;
+        height: 14px;
+        width: 14px;
+        @media(min-width: $fhd) {
+            height: 20px;
+            width: 20px;
+        }
+    }
+}

@@ -23,6 +23,7 @@
 
     <link rel="stylesheet" href="css_plugins/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css_plugins/select2.css" />
+    <link rel="stylesheet" href="css_plugins/jquery.fancybox.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/custom.css" />
 </head>
@@ -132,7 +133,7 @@
                                 <div class="news-card__top-block">
                                     <time class="news-card__date" datetime="2026-12-25">25 декабря</time>
 
-                                    <p class="badge badge--type_1">Провайдеры и слоты</p>
+                                    <a class="badge badge--type_1" href="#">Провайдеры и слоты</a>
                                 </div>
 
                                 <p class="news-card__title"><a href="#1">Pragmatic Play представил новый слот с нестандартной механикой</a></p>
@@ -165,7 +166,7 @@
                                 <div class="news-card__top-block">
                                     <time class="news-card__date" datetime="2026-12-24">24 декабря</time>
 
-                                    <p class="badge badge--type_3">События и турниры</p>
+                                    <a class="badge badge--type_3" href="#">События и турниры</a>
                                 </div>
 
                                 <p class="news-card__title"><a href="#1">В России вырос интерес к демо-играм без ставок и регистрации</a></p>
@@ -198,7 +199,7 @@
                                 <div class="news-card__top-block">
                                     <time class="news-card__date" datetime="2026-12-24">24 декабря</time>
 
-                                    <p class="badge badge--type_2">Стримеры</p>
+                                    <a class="badge badge--type_2" href="#">Стримеры</a>
                                 </div>
 
                                 <p class="news-card__title"><a href="#1">Стримеры обучают зрителей игре на слотах во время своих трансляций</a></p>
@@ -231,7 +232,7 @@
                                 <div class="news-card__top-block">
                                     <time class="news-card__date" datetime="2026-12-25">25 декабря</time>
 
-                                    <p class="badge badge--type_1">Провайдеры и слоты</p>
+                                    <a class="badge badge--type_1" href="#">Провайдеры и слоты</a>
                                 </div>
 
                                 <p class="news-card__title"><a href="#1">Pragmatic Play представил новый слот с нестандартной механикой</a></p>
@@ -264,7 +265,7 @@
                                 <div class="news-card__top-block">
                                     <time class="news-card__date" datetime="2026-12-24">24 декабря</time>
 
-                                    <p class="badge badge--type_3">События и турниры</p>
+                                    <a class="badge badge--type_3" href="#">События и турниры</a>
                                 </div>
 
                                 <p class="news-card__title"><a href="#1">В России вырос интерес к демо-играм без ставок и регистрации</a></p>
@@ -297,7 +298,7 @@
                                 <div class="news-card__top-block">
                                     <time class="news-card__date" datetime="2026-12-24">24 декабря</time>
 
-                                    <p class="badge badge--type_2">Стримеры</p>
+                                    <a class="badge badge--type_2" href="#">Стримеры</a>
                                 </div>
 
                                 <p class="news-card__title"><a href="#1">Стримеры обучают зрителей игре на слотах во время своих трансляций</a></p>
@@ -323,12 +324,12 @@
                     </div>
 
                     <ul class="pager">
-                        <li class="pager__item">
+                        <li class="pager__item pager__item--arrow">
                             <span class="pager__link">
                                 <svg aria-hidden="true">
                                     <use xlink:href="images/sprite.svg#arrow_left" />
                                 </svg>
-                                Назад
+                                <span>Назад</span>
                             </span>
                         </li>
                         <li class="pager__item">
@@ -349,9 +350,9 @@
                         <li class="pager__item">
                             <a class="pager__link" href="#">68</a>
                         </li>
-                        <li class="pager__item">
+                        <li class="pager__item pager__item--arrow">
                             <a class="pager__link" href="#">
-                                Вперед
+                                <span>Вперед</span>
                                 <svg aria-hidden="true">
                                     <use xlink:href="images/sprite.svg#arrow_right" />
                                 </svg>
@@ -451,16 +452,22 @@
             </div>
         </div>
     </footer>
+    
+    <a class="js-to-top to-top" href="#" title="Наверх">
+        <svg aria-hidden="true">
+            <use xlink:href="images/sprite.svg#chevron_up" />
+        </svg>
+    </a>
 
     <script src="js/jquery-3.7.1.min.js"></script>
     
     <script src="js/swiper-bundle.min.js"></script>
     
     <!--<script src="js/jquery.inputmask.min.js"></script>
-    <script src="js/inputmask-init.js"></script>
+    <script src="js/inputmask-init.js"></script>-->
     
     <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/fancybox-defaults.js"></script>-->
+    <script src="js/fancybox-defaults.js"></script>
     
     <script src="js/select2.full.min.js"></script>
     <script src="js/select2-addon.js"></script>

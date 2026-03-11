@@ -91,6 +91,11 @@
         gap: 16px;
         flex-wrap: wrap;
         margin-top: auto;
+
+        .badge {
+            position: relative;
+            z-index: 2;
+        }
     }
 
     &__bottom-item {

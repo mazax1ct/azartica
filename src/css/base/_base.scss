@@ -126,7 +126,7 @@ html {
             width: 24.014%;
         }
         @media(max-width: $md - 0.02px) {
-            margin-top: 30px;
+            margin-top: var(--section_indent_min);
         }
 
         &--mobile_hidden {
@@ -134,13 +134,11 @@ html {
                 display: none;
             }
         }
-
-        .banner {
+        /*.banner {
             @media(max-width: $md - 0.02px) {
                 height: 200px;
             }
-        }
-
+        }*/
         .h2,
         .h3,
         .h4,
@@ -150,7 +148,7 @@ html {
             margin-top: 0;
 
             &:not(:last-child) {
-                margin-bottom: 20px;
+                margin-bottom: var(--gap);
             }
         }
 
@@ -165,16 +163,36 @@ html {
                 }
             }
         }
+
+        .streamers-list {
+            @media(min-width: $md) {
+                flex-direction: column;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: var(--gap);
+            }
+
+            .streamer-card {
+                @media(min-width: $md) {
+                    width: 100%;
+                }
+                @media(min-width: $md) and (max-width: $xlg - 0.02px) {
+                    flex-direction: column;
+                }
+            }
+        }
     }
 
     &__section {
         border-radius: var(--border_radius_default);
         background-color: var(--white);
-        padding: 40px var(--container_padding) clamp(40px, 5.25vw, 80px);
+        padding: calc(var(--container_padding) * 2) var(--container_padding) clamp(calc(var(--container_padding) * 2), 5.25vw, calc(var(--container_padding) * 4));
         @media(min-width: $hd) {
             padding-right: clamp(40px, 5.25vw, 80px);
         }
         @media(max-width: $md - 0.02px) {
+            border-radius: 0;
             margin-left: calc(0.01px - var(--container_padding));
             margin-right: calc(0.01px - var(--container_padding));
         }
@@ -546,6 +564,14 @@ table {
         tr:nth-child(odd) {
             td {
                 background-color: #FAF6FF;
+            }
+        }
+
+        tr {
+            &:not(:last-child) {
+                td {
+                    border-bottom: 1px solid var(--purple_light);
+                }
             }
         }
     }

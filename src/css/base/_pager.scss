@@ -10,6 +10,14 @@
         margin-bottom: var(--section_indent_min);
     }
 
+    &__item {
+        &--arrow {
+            @media(max-width: $sm - 0.02px) {
+                display: none;
+            }
+        }
+    }
+
     &__link {
         align-items: center;
         border-radius: 8px;

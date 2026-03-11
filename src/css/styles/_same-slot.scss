@@ -23,6 +23,8 @@
     display: flex;
     gap: 16px;
     padding: 20px;
+    position: relative;
+    z-index: 0;
 
     &__image {
         border-radius: var(--border_radius_small);

@@ -142,6 +142,7 @@
         }
         @include hover {
             color: var(--purple);
+            font-weight: 500;
         }
 
         &.is-active {
@@ -197,6 +198,10 @@
         width: 100%;
 
         &:focus {
+            border-color: var(--accent);
+            box-shadow: 0 3px 3.5px rgba(150, 112, 119, 0.1);
+        }
+        @include hover {
             border-color: var(--accent);
             box-shadow: 0 3px 3.5px rgba(150, 112, 119, 0.1);
         }

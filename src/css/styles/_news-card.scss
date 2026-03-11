@@ -73,6 +73,11 @@
         gap: 16px;
         flex-wrap: wrap;
         margin-bottom: 16px;
+
+        .badge {
+            position: relative;
+            z-index: 2;
+        }
     }
 
     &__date {

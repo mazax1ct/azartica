@@ -23,6 +23,7 @@
 
     <link rel="stylesheet" href="css_plugins/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css_plugins/select2.css" />
+    <link rel="stylesheet" href="css_plugins/jquery.fancybox.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/custom.css" />
 </head>
@@ -135,9 +136,9 @@
                             </tr>
                             <tr>
                                 <td>1</td>
-                                <td><img class="logo" src="images/content/casino/logo.jpg" srcset="images/content/casino/logo.jpg 2x" alt="Tigre de Cristal"></td>
+                                <td><a href="#"><img class="logo" src="images/content/casino/logo.jpg" srcset="images/content/casino/logo.jpg 2x" alt="Tigre de Cristal"></a></td>
                                 <td>
-                                    <p class="title">Tigre de Cristal</p>
+                                    <p class="title"><a href="#">Tigre de Cristal</a></p>
                                     <p class="description">Россия · Приморье</p>
                                 </td>
                                 <td>
@@ -161,9 +162,9 @@
                             </tr>
                             <tr>
                                 <td>2</td>
-                                <td><img class="logo" src="images/content/casino/logo.jpg" srcset="images/content/casino/logo.jpg 2x" alt="Tigre de Cristal"></td>
+                                <td><a href="#"><img class="logo" src="images/content/casino/logo.jpg" srcset="images/content/casino/logo.jpg 2x" alt="Tigre de Cristal"></a></td>
                                 <td>
-                                    <p class="title">Алтай Палас</p>
+                                    <p class="title"><a href="#">Алтай Палас</a></p>
                                     <p class="description">Россия · Приморье</p>
                                 </td>
                                 <td>
@@ -187,9 +188,9 @@
                             </tr>
                             <tr>
                                 <td>3</td>
-                                <td><img class="logo" src="images/content/casino/logo.jpg" srcset="images/content/casino/logo.jpg 2x" alt="Tigre de Cristal"></td>
+                                <td><a href="#"><img class="logo" src="images/content/casino/logo.jpg" srcset="images/content/casino/logo.jpg 2x" alt="Tigre de Cristal"></a></td>
                                 <td>
-                                    <p class="title">Tigre de Cristal</p>
+                                    <p class="title"><a href="#">Tigre de Cristal</a></p>
                                     <p class="description">Россия · Приморье</p>
                                 </td>
                                 <td>
@@ -213,9 +214,9 @@
                             </tr>
                             <tr>
                                 <td>4</td>
-                                <td><img class="logo" src="images/content/casino/logo.jpg" srcset="images/content/casino/logo.jpg 2x" alt="Tigre de Cristal"></td>
+                                <td><a href="#"><img class="logo" src="images/content/casino/logo.jpg" srcset="images/content/casino/logo.jpg 2x" alt="Tigre de Cristal"></a></td>
                                 <td>
-                                    <p class="title">Алтай Палас</p>
+                                    <p class="title"><a href="#">Алтай Палас</a></p>
                                     <p class="description">Россия · Приморье</p>
                                 </td>
                                 <td>
@@ -239,9 +240,9 @@
                             </tr>
                             <tr>
                                 <td>5</td>
-                                <td><img class="logo" src="images/content/casino/logo.jpg" srcset="images/content/casino/logo.jpg 2x" alt="Tigre de Cristal"></td>
+                                <td><a href="#"><img class="logo" src="images/content/casino/logo.jpg" srcset="images/content/casino/logo.jpg 2x" alt="Tigre de Cristal"></a></td>
                                 <td>
-                                    <p class="title">Tigre de Cristal</p>
+                                    <p class="title"><a href="#">Tigre de Cristal</a></p>
                                     <p class="description">Россия · Приморье</p>
                                 </td>
                                 <td>
@@ -349,7 +350,7 @@
             <div class="sorting-block">
                 <p class="sorting-block__count">Найдено <b>48 казино</b></p>
 
-                <div class="sorting-block__select">
+                <div class="sorting-select">
                     <svg aria-hidden="true">
                         <use xlink:href="images/sprite.svg#sort_icon" />
                     </svg>
@@ -774,12 +775,12 @@
             </div>
 
             <ul class="pager">
-                <li class="pager__item">
+                <li class="pager__item pager__item--arrow">
                     <span class="pager__link">
                         <svg aria-hidden="true">
                             <use xlink:href="images/sprite.svg#arrow_left" />
                         </svg>
-                        Назад
+                        <span>Назад</span>
                     </span>
                 </li>
                 <li class="pager__item">
@@ -800,9 +801,9 @@
                 <li class="pager__item">
                     <a class="pager__link" href="#">68</a>
                 </li>
-                <li class="pager__item">
+                <li class="pager__item pager__item--arrow">
                     <a class="pager__link" href="#">
-                        Вперед
+                        <span>Вперед</span>
                         <svg aria-hidden="true">
                             <use xlink:href="images/sprite.svg#arrow_right" />
                         </svg>
@@ -890,16 +891,22 @@
             </div>
         </div>
     </footer>
+    
+    <a class="js-to-top to-top" href="#" title="Наверх">
+        <svg aria-hidden="true">
+            <use xlink:href="images/sprite.svg#chevron_up" />
+        </svg>
+    </a>
 
     <script src="js/jquery-3.7.1.min.js"></script>
     
     <script src="js/swiper-bundle.min.js"></script>
     
     <!--<script src="js/jquery.inputmask.min.js"></script>
-    <script src="js/inputmask-init.js"></script>
+    <script src="js/inputmask-init.js"></script>-->
     
     <script src="js/jquery.fancybox.min.js"></script>
-    <script src="js/fancybox-defaults.js"></script>-->
+    <script src="js/fancybox-defaults.js"></script>
     
     <script src="js/select2.full.min.js"></script>
     <script src="js/select2-addon.js"></script>

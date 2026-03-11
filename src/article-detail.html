@@ -48,10 +48,7 @@
                 <div class="two-columns__small">
                     <div class="banner">
                         <a href="#">
-                            <picture>
-                                <source srcset="images/content/banners/banner_right_small.jpg, images/content/banners/banner_right_small@2x.jpg 2x" media="(min-width: 1024px)">
-                                <img src="images/content/banners/banner_200.jpg" srcset="images/content/banners/banner_200@2x.jpg 2x" alt="">
-                            </picture>
+                            <img src="images/content/banners/banner_right_small.jpg" srcset="images/content/banners/banner_right_small@2x.jpg 2x" alt="">
                         </a>
                     </div>
                 </div>
@@ -100,12 +97,19 @@
 
                         <h2>Содержание</h2>
 
-                        <ul class="article-anchors">
+                        <ul class="article-anchors is-collapsed">
                             <li><a href="#1">Что такое RTP в слотах</a></li>
                             <li><a href="#2">Как рассчитывается RTP</a></li>
                             <li><a href="#3">RTP и волатильность — в чём разница</a></li>
                             <li><a href="#4">Какой RTP считается хорошим</a></li>
                         </ul>
+
+                        <button class="js-anchors-shower anchors-shower" type="button">
+                            Показать полностью
+                            <svg aria-hidden="true">
+                                <use xlink:href="images/sprite.svg#chevron_down" />
+                            </svg>
+                        </button>
 
                         <h2 id="1">Что такое RTP в слотах (H2)</h2>
 
@@ -390,7 +394,7 @@
                                     20 мин.
                                 </p>
 
-                                <p class="badge badge--type_1">Провайдеры и слоты</p>
+                                <a class="badge badge--type_1" href="#">Провайдеры и слоты</a>
                             </div>
                         </div>
 
@@ -416,7 +420,7 @@
                                     7 мин.
                                 </p>
 
-                                <p class="badge badge--type_1">Провайдеры и слоты</p>
+                                <a class="badge badge--type_1" href="#">Провайдеры и слоты</a>
                             </div>
                         </div>
 
@@ -442,7 +446,7 @@
                                     20 мин.
                                 </p>
 
-                                <p class="badge badge--type_1">Провайдеры и слоты</p>
+                                <a class="badge badge--type_1" href="#">Провайдеры и слоты</a>
                             </div>
                         </div>
                     </div>

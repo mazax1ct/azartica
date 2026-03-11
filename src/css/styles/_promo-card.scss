@@ -79,11 +79,4 @@
             width: 24px;
         }
     }
-
-    &__button-text {
-        max-width: calc(100% - 10px - 24px);
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
 }

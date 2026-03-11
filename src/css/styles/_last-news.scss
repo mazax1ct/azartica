@@ -65,6 +65,11 @@
         gap: 16px;
         flex-wrap: wrap;
         margin-bottom: 16px;
+
+        .badge {
+            position: relative;
+            z-index: 2;
+        }
     }
 
     &__date {
@@ -74,7 +79,7 @@
 
     &__title {
         font-size: clamp(18px, 2vw, 24px);
-        font-weight: 700;
+        font-weight: 400;
         line-height: 1.2;
         margin-bottom: 16px;
 
@@ -89,7 +94,6 @@
         align-items: center;
         display: flex;
         gap: 16px;
-        justify-content: space-between;
         width: 100%;
         @media(max-width: 600px - 0.02px) {
             margin-top: 16px;
